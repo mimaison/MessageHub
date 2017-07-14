@@ -34,7 +34,6 @@ The {{site.data.keyword.mql}} is available in the following
 {{site.data.keyword.Bluemix_notm}} regions only: US South, United Kingdom, and Sydney. The MQ Light API not available in the Germany region or in
 {{site.data.keyword.Bluemix_notm}} Dedicated.
 
-<!-- begin STAGING ONLY -->
-For more information about choosing between the APIs, see [Choosing between the three APIs](/docs/services/MessageHub/messagehub087.html).
-<!-- end STAGING ONLY -->
-
+<!-- begin PRODUCTION ONLY -->
+For more information about choosing between the APIs, see [Why use the Kafka API?](/docs/services/MessageHub/messagehub054.html), [Why use the MQ Light API?](/docs/services/MessageHub/messagehub076.html), and [Why use the Kafka REST API?](/docs/services/MessageHub/messagehub065.html).
+<!-- end PRODUCTION ONLY -->

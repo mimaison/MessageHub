@@ -13,7 +13,7 @@ lastupdated: "2017-02-07"
 {:pre: .pre}
 
 # VCAP_SERVICES environment variable
-{: #vcap}
+{: #vcap notoc}
 
 When your application is bound to the {{site.data.keyword.messagehub}} service, details of the service are stored
 in JSON format in the VCAP_SERVICES environment variable for your app. Here is an example:
@@ -37,8 +37,7 @@ in JSON format in the VCAP_SERVICES environment variable for your app. Here is a
   }
 }
 ```
-
-{: codeblock}
+{:pre}
 
 The environment variable's content is the same, regardless of the API that you use to connect to {{site.data.keyword.messagehub}}. Your {{site.data.keyword.Bluemix_notm}} app selects the appropriate credentials from the VCAP_SERVICES environment variable, depending on the interface in
  use.

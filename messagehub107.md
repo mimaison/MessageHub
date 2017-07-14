@@ -12,14 +12,15 @@ lastupdated: "2017-04-27"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# What is Message Hub?
+# What is {{site.data.keyword.messagehub}}?
 
 {{site.data.keyword.messagehub}} implements publish/subscribe
 messaging using topics. Unlike other messaging systems, {{site.data.keyword.messagehub}} provides topics but not queues. {{site.data.keyword.messagehub}} also offers
 additional capabilities such as the {{site.data.keyword.mql}} API and bridges to other systems.
 
 {{site.data.keyword.messagehub}} has three APIs: the Kafka API, the {{site.data.keyword.mql}} API and the
-Kafka REST API. For more information, see [Creating messaging applications](/docs/services/MessageHub/messagehub086.html).
+Kafka REST API. For more information about
+creating messaging applications using the APIs, see [Using a Kafka client](/docs/services/MessageHub/messagehub050.html), [Using an MQ Light API client](/docs/services/MessageHub/messagehub075.html), and [Using the Kafka REST API](/docs/services/MessageHub/messagehub025.html).
 
 {{site.data.keyword.messagehub}} also
 supports bridges to a selection of other systems. A bridge is a unidirectional link to another

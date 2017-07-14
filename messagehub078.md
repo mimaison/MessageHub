@@ -21,7 +21,8 @@ To use the API, add a reference to the latest available {{site.data.keyword.mql}
 <dl><dt>For Java</dt>
 <dd>Add the following reference to your ```Maven pom``` file:
 <pre>
-<code>&lt;dependency&gt;
+<code>
+&lt;dependency&gt;
     &lt;groupId&gt;com.ibm.mqlight&lt;/groupId&gt;
     &lt;artifactId&gt;mqlight-api&lt;/artifactId&gt;
     &lt;version&gt;LATEST&lt;/version&gt;
@@ -39,7 +40,8 @@ file:<pre><code>var mqlight = require(‘mqlight’);</code></pre>
 </dd>
 <dt>For Ruby</dt>
 <dd>Add the following reference to the
-```Gemfile```:<pre><code>gem 'mqlight', '~> 1.0'</code></pre>
+```Gemfile```:<pre><code>
+gem 'mqlight', '~> 1.0'</code></pre>
 {:pre}
 
 And add the following require statement to your source
