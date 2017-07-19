@@ -13,7 +13,7 @@ lastupdated: "2017-02-07"
 {:pre: .pre}
 
 # VCAP_SERVICES environment variable
-{: #vcap notoc}
+{: #vcap}
 
 When your application is bound to the {{site.data.keyword.messagehub}} service, details of the service are stored
 in JSON format in the VCAP_SERVICES environment variable for your app. Here is an example:
