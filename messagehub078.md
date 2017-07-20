@@ -19,7 +19,8 @@ lastupdated: "2016-11-22"
 To use the API, add a reference to the latest available {{site.data.keyword.mql}} client API for your chosen language as follows:
 
 
-**For Java**
+## Java
+{: #mql_java_how notoc}
 
 Add the following reference to your ```Maven pom``` file:
 
@@ -34,7 +35,8 @@ Add the following reference to your ```Maven pom``` file:
 
 
 
-**For Node.js**
+## Node.js
+{: #mql_node_how notoc}
 
 Add the following reference to the dependency section of your ```package.json``` file:
 
@@ -48,8 +50,8 @@ file:
 {: codeblock}
 
 
-
-**For Ruby**
+## For Ruby
+{: #mql_ruby_how notoc}
 
 Add the following reference to the ```Gemfile```:
 
@@ -67,7 +69,8 @@ require ‘mqlight’
 
 
 
-**For Python**
+## For Python
+{: #mql_python_how notoc}
 
 Add the following reference to your ```requirements.txt```
 file:
@@ -84,10 +87,5 @@ And add the following import statement to your source file:
 import mqlight
 ```
 {:codeblock}
-
-
-And the add following import statement to your source
-file:<pre><code>import mqlight</code></pre>
-{:pre}
 
 
