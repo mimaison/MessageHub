@@ -49,7 +49,7 @@ And add the following require statement to your source file:
 {: codeblock}
 
 
-## For Ruby
+## Ruby
 {: #mql_ruby_how notoc}
 
 Add the following reference to the ```Gemfile```:
@@ -59,6 +59,7 @@ gem 'mqlight', '~> 1.0'
 ```
 {: codeblock}
 
+<br>
 And add the following require statement to your source file:
 
 ```
@@ -68,7 +69,7 @@ require ‘mqlight’
 
 
 
-## For Python
+## Python
 {: #mql_python_how notoc}
 
 Add the following reference to your ```requirements.txt```
