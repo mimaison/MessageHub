@@ -43,14 +43,13 @@ Add the following reference to the dependency section of your ```package.json```
 <pre class="pre"><code>"mqlight" : "1.0.x"</code></pre>
 {: codeblock}
 
-And add the following require statement to your source
-file:
+And add the following require statement to your source file:
 
 <pre class="pre"><code>var mqlight = require(‘mqlight’);</code></pre>
 {: codeblock}
 
 
-## For Ruby
+## Ruby
 {: #mql_ruby_how notoc}
 
 Add the following reference to the ```Gemfile```:
@@ -60,6 +59,7 @@ gem 'mqlight', '~> 1.0'
 ```
 {: codeblock}
 
+<br>
 And add the following require statement to your source file:
 
 ```
@@ -69,7 +69,7 @@ require ‘mqlight’
 
 
 
-## For Python
+## Python
 {: #mql_python_how notoc}
 
 Add the following reference to your ```requirements.txt```
