@@ -12,7 +12,7 @@ lastupdated: "2017-08-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Kafka Java client properties and APIs
+# Kafka Java client property, APIs and Streams
 {: #kafka_using_props}
 
 
