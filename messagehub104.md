@@ -71,6 +71,6 @@ For example:
 where BOOTSTRAP_SERVERS, USERNAME, and PASSWORD are the values from your {{site.data.keyword.messagehub}} **Service Credentials** tab in
 {{site.data.keyword.Bluemix_notm}}.
 
-<!-- PRODUCTION ONLY VERSION
+<!-- PRODUCTION ONLY VERSION:
 new topic that includes content from existing topics about samples and migration
 -->
