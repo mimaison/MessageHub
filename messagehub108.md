@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-08"
+lastupdated: "2017-08-16"
 
 ---
 
@@ -22,6 +22,7 @@ Answers to common questions about the {{site.data.keyword.IBM}} {{site.data.keyw
 The default value is 7 days. 
 
 Offset retention is system wide so you cannot set it at an individual topic level. All consumer groups get only 7 days of stored offsets even if their topic has been increased to the maximum 30 days of log retention. 
+
 ## What is {{site.data.keyword.messagehub}}'s availability behavior?
 {: #availability notoc}
 
