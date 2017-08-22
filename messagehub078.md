@@ -22,7 +22,7 @@ To use the API, add a reference to the latest available {{site.data.keyword.mql}
 ## Java
 {: #mql_java_how notoc}
 
-Add the following reference to your ```Maven pom``` file:
+Add the following reference to your <code>Maven pom</code> file:
 
 ```
 <dependency>
@@ -38,7 +38,7 @@ Add the following reference to your ```Maven pom``` file:
 ## Node.js
 {: #mql_node_how notoc}
 
-Add the following reference to the dependency section of your ```package.json``` file:
+Add the following reference to the dependency section of your <code>package.json</code> file:
 
 <pre class="pre"><code>"mqlight" : "1.0.x"</code></pre>
 {: codeblock}
@@ -52,7 +52,7 @@ And add the following require statement to your source file:
 ## Ruby
 {: #mql_ruby_how notoc}
 
-Add the following reference to the ```Gemfile```:
+Add the following reference to the <code>Gemfile</code>:
 
 ```
 gem 'mqlight', '~> 1.0'
@@ -72,7 +72,7 @@ require ‘mqlight’
 ## Python
 {: #mql_python_how notoc}
 
-Add the following reference to your ```requirements.txt```
+Add the following reference to your <code>requirements.txt</code>
 file:
 
 ```

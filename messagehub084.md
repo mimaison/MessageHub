@@ -20,17 +20,20 @@ If you're using the Java clients, you can now use
 the publicly available 0.10.x Kafka clients. You are strongly encouraged to move from 0.9.x to the
 latest 0.10.x version (currently 0.10.2.1). Complete the following steps:
 
+<ol>
+<li>Delete the {{site.data.keyword.messagehub}} login jar module.</li>
+<li>Change your <code>jaas.conf</code> file to the following:
 
-1. Delete the {{site.data.keyword.messagehub}} login jar module.
-2. Change your ```jaas.conf``` file to the following: 
-    ```
-        KafkaClient {
-          org.apache.kafka.common.security.plain.PlainLoginModule required
-          serviceName="kafka"
-            username="<your username>"
-            password="<your password>";
-        };
-    ```
-    {: codeblock}
+<pre class="pre">
+    KafkaClient {
+      org.apache.kafka.common.security.plain.PlainLoginModule required
+      serviceName="kafka"
+        username="&lt;your username&gt;"
+        password="&lt;your password&gt;";
+    };
+</pre>
+{: codeblock}
+</li>
 
-3. Add this line to your consumer and producer properties: ```sasl.mechanism=PLAIN```
+<li>Add this line to your consumer and producer properties: <code>sasl.mechanism=PLAIN</code></li>
+</ol>
