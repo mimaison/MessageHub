@@ -15,12 +15,6 @@ lastupdated: "2017-08-03"
 # Using the Kafka Java client
 {: #kafka_using}
 
-## To do: instructions for getting started, with links for more information
-{: notoc}
-
-## To do: simple send source and receive source in-line
-{: notoc}
-
 ## How to use, download, and run the Java Kafka API sample
 {: notoc}
 
