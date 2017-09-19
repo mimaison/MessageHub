@@ -35,7 +35,7 @@ You can find this ID by looking at the "instance_id" field in the service's VCAP
 10. What impact is the problem having on your service?
 
 
-Provide the information gathered above to IBM in a support ticket by [submitting a support request](https://console.bluemix.net/docs/services/MessageHub/messagehub109.html#report_problem).
+You can provide the information you've gathered to IBM in a support ticket by [submitting a support request](https://console.bluemix.net/docs/support/index.html#open-ticket).
 
 
 
