@@ -17,16 +17,7 @@ lastupdated: "2017-05-11"
 
 
 {{site.data.keyword.messagehub}}에 연결하기 위해 Kafka API는 다음을 사용합니다. 
-```kafka_brokers_sasl
-``` 
-신임정보 및
-```
-user
-```
-및
-
- ```password
-```
+<code>kafka_brokers_sasl</code> 신임정보 및 <code>user</code> 및 <code>password</code>
  [VCAP_SERVICES 환경 변수](/docs/services/MessageHub/messagehub071.html)에서.
 
 ## Java 이외의 애플리케이션에서 연결 및 인증
