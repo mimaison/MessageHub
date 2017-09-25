@@ -18,16 +18,8 @@ lastupdated: "2017-05-11"
 
 Um eine Verbindung zu {{site.data.keyword.messagehub}} herzustellen, verwendet
 die Kafka-API die Berechtigungsnachweise 
-```kafka_brokers_sasl
-``` 
-sowie den Benutzer
-```
-und das Kennwort
-```
-
- ```password
-```
- aus
+<code>kafka_brokers_sasl</code> sowie den Benutzer <code>user</code> und das Kennwort
+<code>password</code> aus
 [Umgebungsvariable VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html).
 
 ## Verbinden und Authentifizieren in einer Nicht-Java-Anwendung
