@@ -18,17 +18,7 @@ lastupdated: "2017-05-11"
 
 Per stabilire una connessione a {{site.data.keyword.messagehub}},
 l'API Kafka utilizza le credenziali  
-```kafka_brokers_sasl
-``` 
-e
-```
-l'utente
-```
-e la
-
- ```password
-```
- dalla
+<code>kafka_brokers_sasl</code> e <code>user</code> e la <code>password</code> dalla
 [variabile di ambiente VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html).
 
 ## Connessione e autenticazione in un'applicazione diversa da Java
