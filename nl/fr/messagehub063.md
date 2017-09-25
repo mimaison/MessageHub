@@ -17,17 +17,8 @@ lastupdated: "2017-05-11"
 
 
 Pour se connecter à {{site.data.keyword.messagehub}}, l'API Kafka utilise les  
-```kafka_brokers_sasl
-``` 
-données d'identification, ainsi que
-```
-l'utilisateur
-```
- et
-
- ```password
-```
- provenant de la [variable d'environnement VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html).
+<code>kafka_brokers_sasl</code> données d'identification, ainsi que l'utilisateur <code>user</code> et le mot de passe
+<code>password</code> provenant de la [variable d'environnement VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html).
 
 ## Connexion et authentification dans une application autre que Java
 {: #kafka_notjava notoc}
