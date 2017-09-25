@@ -17,17 +17,8 @@ lastupdated: "2017-05-11"
 
 
 为了连接到 {{site.data.keyword.messagehub}}，Kafka API 使用 [VCAP_SERVICES 环境变量](/docs/services/MessageHub/messagehub071.html)中的  
-```kafka_brokers_sasl
-``` 
-凭证以及
-```
-user
-```
-和
+<code>kafka_brokers_sasl<code> 凭证以及 <code>user</code> 和 <code>password</code>。
 
- ```password
-```
- 。
 ## 在非 Java 应用程序中进行连接和认证
 {: #kafka_notjava notoc}
 
