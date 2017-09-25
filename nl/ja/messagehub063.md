@@ -17,16 +17,7 @@ lastupdated: "2017-05-11"
 
 
 {{site.data.keyword.messagehub}} に接続するために、Kafka API は、 
-```kafka_brokers_sasl
-``` 
-資格情報と、
-```
-ユーザー
-```
-および
-
- ```password
-```
+<code>kafka_brokers_sasl</code> 資格情報と、<code>user</code> および <code>password</code>
  を [VCAP_SERVICES 環境変数](/docs/services/MessageHub/messagehub071.html) から使用します。
 
 ## Java 以外のアプリケーションでの接続および認証
