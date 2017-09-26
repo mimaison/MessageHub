@@ -31,7 +31,6 @@ between receiving applications, which results in behavior similar to queues.
 You can use {{site.data.keyword.messagehub}} to complete the
 following tasks:
 
-* Wire microservices together.
 * Offload work to back-end worker processes.
 * Connect stream data to analytics to realize powerful insights.
 * Publish event data to multiple applications to react in real time.
