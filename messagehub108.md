@@ -17,11 +17,11 @@ lastupdated: "2017-08-16"
 
 Answers to common questions about the {{site.data.keyword.IBM}} {{site.data.keyword.messagehub}} service.
 
-## What's the default value for Kafka offsets.retention.minutes?
+## How long does Message Hub set the log retention window for the consumer offsets topic?
 {: #offsets notoc}
-The default value is 7 days. 
+{{site.data.keyword.messagehub}} retains consumer offsets for 7 days. This corresponds to the Kafka configuration offsets.retention.minutes. 
 
-Offset retention is system wide so you cannot set it at an individual topic level. All consumer groups get only 7 days of stored offsets even if their topic has been increased to the maximum 30 days of log retention. 
+Offset retention is system-wide so you cannot set it at an individual topic level. All consumer groups get only 7 days of stored offsets even if using a topic whose log retention has been increased to the maximum of 30 days. 
 
 ## What is {{site.data.keyword.messagehub}}'s availability behavior?
 {: #availability notoc}
