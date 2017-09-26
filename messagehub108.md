@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-16"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -21,7 +21,7 @@ Answers to common questions about the {{site.data.keyword.IBM}} {{site.data.keyw
 {: #offsets notoc}
 {{site.data.keyword.messagehub}} retains consumer offsets for 7 days. This corresponds to the Kafka configuration offsets.retention.minutes. 
 
-Offset retention is system-wide so you cannot set it at an individual topic level. All consumer groups get only 7 days of stored offsets even if using a topic whose log retention has been increased to the maximum of 30 days. 
+Offset retention is system-wide so you cannot set it at an individual topic level. All consumer groups get only 7 days of stored offsets even if using a topic with a log retention that has been increased to the maximum of 30 days. 
 
 ## What is {{site.data.keyword.messagehub}}'s availability behavior?
 {: #availability notoc}
