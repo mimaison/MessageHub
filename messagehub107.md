@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-04-27"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -21,7 +21,7 @@ additional capabilities such as bridges to other systems.
 {{site.data.keyword.messagehub}} is based on the open-source
 Apache Kafka project, a highly scalable, high-performing messaging backbone proven in many
 production environments. For more information, see [{{site.data.keyword.messagehub}} and Apache Kafka](/docs/services/MessageHub/messagehub073.html).
-Apache Kafka tools usually work directly with Message Hub, although you do need to provide additional configuration since connections to Message Hub always authenticate using credentials.
+Apache Kafka tools usually work directly with {{site.data.keyword.messagehub}}, although you do need to provide additional configuration because connections to {{site.data.keyword.messagehub}} always authenticate using credentials.
 
 {{site.data.keyword.messagehub}} has three APIs: the Kafka API, the Kafka REST API and the {{site.data.keyword.mql}} API.
 In most cases, the Kafka API is the best choice. For more information about
