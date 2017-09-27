@@ -17,17 +17,7 @@ lastupdated: "2017-05-11"
 
 
 Para conectarse a {{site.data.keyword.messagehub}}, la API Kafka utiliza 
-```kafka_brokers_sasl
-``` 
-las credenciales y
-```
-el usuario
-```
-y
-
- ```password
-```
- la contraseña de [VCAP_SERVICES environment variable](/docs/services/MessageHub/messagehub071.html).
+<code>kafka_brokers_sasl</code> las credenciales y <code>user</code> y <code>password</code> la contraseña de [VCAP_SERVICES environment variable](/docs/services/MessageHub/messagehub071.html).
 
 ## Connecting and authenticating in an application other than Java
 {: #kafka_notjava notoc}
