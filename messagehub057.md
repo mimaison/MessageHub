@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -16,12 +16,6 @@ lastupdated: "2017-05-05"
 # Known restrictions
 {: #restrictions}
 
-
-## Number of {{site.data.keyword.messagehub}} instances for each {{site.data.keyword.Bluemix_notm}} space
-{: #instances_space}
-
-You can have only one {{site.data.keyword.messagehub}} instance for each {{site.data.keyword.Bluemix_notm}}
-space.
 
 ##Topics and partitions
 {: #topics_partitions notoc}
@@ -91,5 +85,5 @@ REST API returns the following JSON:
 {: #kafka_consumer notoc}
 
 You cannot use the Apache Kafka 0.8.2 simple or high-level
-consumer API with {{site.data.keyword.messagehub}}. Instead, use the new Kafka 0.9
+consumer API with {{site.data.keyword.messagehub}}. Instead, you can use the earliest supported Kafka consumer API, which is 0.9.
 consumer API.
