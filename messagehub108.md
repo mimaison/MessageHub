@@ -17,7 +17,8 @@ lastupdated: "2017-09-26"
 
 Answers to common questions about the {{site.data.keyword.IBM}} {{site.data.keyword.messagehub}} service.
 
-## Using Kafka APIs to create and delete topics
+<!--17/10/17 - Karen: same info duplicated at messagehub104 -->
+## How do I use Kafka APIs to create and delete topics?
 {: #topic_admin notoc}
 
 If you're using a Kafka client at 0.11 or later, or Kafka Streams at 0.10.2.0 or later, you can use APIs to create and delete topics. We've put some restrictions on the settings allowed when you create topics. Currently, you can modify the following settings only:
