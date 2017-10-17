@@ -21,7 +21,7 @@ Kafka API uses the <code>kafka_brokers_sasl</code> credentials, and the <code>us
 the [VCAP_SERVICES environment variable](/docs/services/MessageHub/messagehub071.html).
 
 <!--17/10/17 - Karen: following info duplicated at messagehub104 -->
-## Using the sasl.jaas.config property: connecting and authenticating in a Java application
+## Using the sasl.jaas.config property (connecting and authenticating in a Java application)
 {: #kafka_java notoc}
 If you're using a Kafka client at 0.10.2.1 or later, you can use the <code>sasl.jaas.config</code> property for client configuration instead of a JAAS file. To connect to {{site.data.keyword.messagehub}}, set <code>sasl.jaas.config</code> as follows:
 <pre>

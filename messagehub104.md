@@ -75,7 +75,8 @@ If you use <code>sasl.jaas.config</code>, clients running in the same JVM can us
 
 For an earlier Kafka client, you must use a JAAS configuration file to specify the credentials. This mechanism is less convenient therefore we recommend using the <code>sasl.jaas.config</code> property instead.
 
-<!--17/10/17 - Karen: following info duplicated at messagehub108 -->
+<!-- 17/10/17 - Karen: following info duplicated at messagehub108 -->
+
 ## APIs for topic administration
 {: #topic_admin notoc}
 
