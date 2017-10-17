@@ -39,7 +39,7 @@ You can find the sample code in the [message-hub-samples GitHub project ![Extern
 {: #kafka_migrate notoc}
 
 
-If you are using the Java clients, you can now use
+If you're using the Java clients, you can now use
 the publicly available 0.10.x Kafka clients. You are strongly encouraged to move from 0.9.x to the
 latest 0.10.x version (currently 0.10.2.1). Complete the following steps:
 
