@@ -57,7 +57,10 @@ latest 0.10.x version (currently 0.10.2.1). Complete the following steps:
 
 3. Add this line to your consumer and producer properties: <code>sasl.mechanism=PLAIN</code>
 
-<!--17/10/17 - Karen: following info duplicated at messagehub063 -->
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
+
 ## Using the sasl.jaas.config property
 {: #sasl_prop notoc}
 If you're using a Kafka client at 0.10.2.1 or later, you can use the <code>sasl.jaas.config</code> property for client configuration instead of a JAAS file. To connect to {{site.data.keyword.messagehub}}, set <code>sasl.jaas.config</code> as follows:
@@ -75,7 +78,9 @@ If you use <code>sasl.jaas.config</code>, clients running in the same JVM can us
 
 For an earlier Kafka client, you must use a JAAS configuration file to specify the credentials. This mechanism is less convenient therefore we recommend using the <code>sasl.jaas.config</code> property instead.
 
-<!-- 17/10/17 - Karen: following info duplicated at messagehub108 -->
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
 
 ## APIs for topic administration
 {: #topic_admin notoc}
