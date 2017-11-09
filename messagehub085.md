@@ -12,7 +12,7 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Differences between Message Hub in Bluemix Public and Bluemix Dedicated environments
+# Differences between Message Hub in {{site.data.keyword.Bluemix_notm}} Public and Dedicated environments
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}} is an open-standards,
@@ -48,6 +48,7 @@ pay for the service rather than how much you use it. You can have up to 75 parti
 whole environment including all organizations and spaces. Each partition is capped at 10 GB to
 ensure the cluster doesn't run out of space.
 
+{{site.data.keyword.messagehub}} in Dedicated can only be deployed with {{site.data.keyword.Bluemix_notm}} Dedicated, but a syndicated version of our public service can be made available if you're using other dedicated environments.
 The Kibana and Grafana dashboards for monitoring the service are not supported in {{site.data.keyword.Bluemix_notm}} Dedicated.
 
 For more information, see [{{site.data.keyword.Bluemix_notm}} Dedicated ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window}.
