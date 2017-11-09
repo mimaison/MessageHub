@@ -38,6 +38,6 @@ community.
 *  [Apache Kafka 0.10.2.1 client ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://kafka.apache.org/0102/javadoc/index.html){: new_window}
 *  [A Comprehensive, Open Source REST Proxy for Kafka. ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.confluent.io/blog/a-comprehensive-open-source-rest-proxy-for-kafka/){: new_window} 
 	This blog provides a good introduction to the strengths and weaknesses of the Kafka REST API.
-*  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} pricing sheet ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ng.bluemix.net/#/pricing){: new_window}
-*  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} prerequisites ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
+*  [{{site.data.keyword.Bluemix_notm}} pricing sheet ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ng.bluemix.net/#/pricing){: new_window}
+*  [{{site.data.keyword.Bluemix_notm}} prerequisites ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
 
