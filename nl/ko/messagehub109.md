@@ -17,7 +17,7 @@ lastupdated: "2017-08-18"
 # {{site.data.keyword.messagehub}} 팀에 문제점 보고
 {: #report_problem}
 
-{{site.data.keyword.messagehub}}에 문제점이 생긴 경우, [{{site.data.keyword.Bluemix_notm}} 상태 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://status.ng.bluemix.net/){:new_window}을 우선 확인하십시오. 
+{{site.data.keyword.messagehub}}에 문제점이 생긴 경우, [{{site.data.keyword.Bluemix_notm}} 상태 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://status.ng.bluemix.net/){:new_window}를 우선 확인하십시오. 
 
 {{site.data.keyword.messagehub}} 팀으로부터 도움이 필요하면 다음과 같은 정보를 가능한 많이 수집하십시오.
 {:shortdesc}

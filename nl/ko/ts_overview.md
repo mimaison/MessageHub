@@ -23,7 +23,8 @@ lastupdated: "2017-05-10"
 {{site.data.keyword.messagehub}}에 대한 질문이 있는 경우,
 전용 [Stack Overflow 채널 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://stackoverflow.com/questions/tagged/message-hub){: new_window}에 답변이 이미 있는지 확인하십시오.
 답변이 없는 경우 질문을 게시하면 {{site.data.keyword.messagehub}} 개발 팀 또는
-다양한 커뮤니티의 구성원이 답변을 제공할 것입니다. {:shortdesc}
+다양한 커뮤니티의 구성원이 답변을 제공할 것입니다.
+{:shortdesc}
 
 ## 유용한 링크
 {: #troubleshooting_links notoc}
