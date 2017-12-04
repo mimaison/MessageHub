@@ -18,7 +18,7 @@ lastupdated: "2016-11-22"
 
 Pour utiliser l'API, ajoutez une référence à l'API du client {{site.data.keyword.mql}} pour Java la plus récente comme suit :
 
-Ajoutez la référence suivante dans le fichier <code>Maven pom</code> : 
+Ajoutez la référence suivante dans le fichier <code>Maven pom</code> :
 
 ```
 <dependency>

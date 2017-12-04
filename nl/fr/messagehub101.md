@@ -18,7 +18,7 @@ lastupdated: "2016-11-22"
 
 Pour utiliser l'API, ajoutez une référence à l'API du client {{site.data.keyword.mql}} pour Python la plus récente comme suit :
 
-Ajoutez la référence suivante dans le fichier <code>requirements.txt</code> : 
+Ajoutez la référence suivante dans le fichier <code>requirements.txt</code> :
 
 ```
 git+git://github.com/mqlight/python-mqlight.git@readthedocs

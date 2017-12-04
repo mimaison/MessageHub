@@ -17,5 +17,6 @@ lastupdated: "2016-11-22"
 {: #encryption_payloads}
 
 Le protocole TLS chiffre les données des messages en vue de leur transmission entre {{site.data.keyword.messagehub}} et les clients. {{site.data.keyword.messagehub}} stocke les données des messages au repos et les
-journaux des messages sur des disques chiffrés. {:shortdesc}
+journaux des messages sur des disques chiffrés.
+{:shortdesc}
 

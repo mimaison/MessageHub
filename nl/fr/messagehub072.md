@@ -32,11 +32,9 @@ pouvez accéder à ces mesures en cliquant sur le bouton **Grafana**
 du tableau de bord {{site.data.keyword.messagehub}} dans la console {{site.data.keyword.Bluemix_notm}}.
 </dd>
 <dt>Evénements relatifs aux sujets</dt>
-<dd>Des événements sont aussi envoyés par push chaque fois que vous créez ou supprimez un sujet. 
-Vous pouvez accéder à ces événements en cliquant sur le bouton **Kibana**
+<dd>Des événements sont aussi envoyés par push chaque fois que vous créez ou supprimez un sujet. Vous pouvez accéder à ces événements en cliquant sur le bouton **Kibana**
 du tableau de bord {{site.data.keyword.messagehub}} dans la console
-{{site.data.keyword.Bluemix_notm}}.
-</dd>
+{{site.data.keyword.Bluemix_notm}}.</dd>
 </dl>
 
 

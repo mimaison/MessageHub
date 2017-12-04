@@ -15,7 +15,7 @@ lastupdated: "2016-11-22"
 # Configuration requise pour l'utilisation de l'API REST Kafka avec Message Hub
 {: #rest_reqs}
 
-La configuration suivante est nécessaire pour utiliser l'API REST Kafka avec {{site.data.keyword.messagehub}} : 
+La configuration suivante est nécessaire pour utiliser l'API REST Kafka avec {{site.data.keyword.messagehub}} :
 
 <!-- TBC. Reqs needed here -->
 

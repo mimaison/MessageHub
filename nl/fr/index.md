@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,25 +15,22 @@ lastupdated: "2017-03-02"
 # Initiation à Message Hub
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} est un bus de messages évolutif,
-distribué, à haute capacité de traitement, qui permet d'associer les technologies de
-cloud sur site et hors site.
+{{site.data.keyword.messagehub_full}} est un service de messagerie
+évolutif, distribué, à haute capacité de traitement qui permet aux applications et aux
+services de communiquer facilement et de manière fiable.
 {:shortdesc}
 
-{{site.data.keyword.messagehub}} vous permet d'effectuer les tâches suivantes : 
+{{site.data.keyword.messagehub}} vous permet d'effectuer les tâches suivantes :
 
-* Interconnecter des microservices avec des protocoles ouverts
+* Décharger des travaux vers des processus d'agent de back end
 * Connecter des données de flux à des fonctions d'analyse pour en tirer des informations importantes
 * Fournir des données d'événement à plusieurs applications pour qu'elles réagissent en temps réel
+* Transférer des données vers un autre service
 
-Vous pouvez ainsi utiliser {{site.data.keyword.messagehub}} pour publier des changements de l'inventaire, créer un bus centralisé pour les données en temps réel
-ou activer des applications afin qu'elles déchargent des travaux vers des processus d'agent de back end.
-
-Pour vous familiariser avec {{site.data.keyword.messagehub}} et commencer à
-envoyer et à recevoir des messages, utilisez l'exemple Java™. Cet exemple montre comment
+Pour vous familiariser avec {{site.data.keyword.messagehub}}
+et commencer à envoyer et à recevoir des messages, utilisez l'exemple Java™. Cet exemple montre comment
 un producteur envoie des messages à un consommateur à l'aide d'un sujet. Le même
-exemple de programme permet de consommer et de produire des messages. 
+exemple de programme permet de consommer et de produire des messages.
 
 ![Diagramme de présentation de l'exemple Java](getting_started_sample.gif "Diagramme de présentation de l'exemple Java illustrant le flux de messages.")
 
@@ -41,32 +38,32 @@ exemple de programme permet de consommer et de produire des messages.
 Procédez comme suit :
 {: #getting_started_steps}
  
-1. Créez une instance de service {{site.data.keyword.messagehub}} : 
+1. Créez une instance de service {{site.data.keyword.messagehub}} :
 
-  a. Connectez-vous à {{site.data.keyword.Bluemix_notm}} à l'aide de l'interface utilisateur Web.  
+  a. Connectez-vous à {{site.data.keyword.Bluemix_notm}} à l'aide de l'interface utilisateur Web. 
   
   b. Cliquez sur **CATALOGUE**.
   
   c. Dans la section **Services d'application**, cliquez sur **{{site.data.keyword.messagehub}}**. La page de l'instance de service {{site.data.keyword.messagehub}} s'ouvre.
   
-  d. Laissez le service déconnecté dans le menu **Connecter à** et entrez le nom de votre service, ainsi que les données d'identification. Vous pouvez utiliser les valeurs par défaut. 
+  d. Laissez le service déconnecté dans le menu **Connecter à** et entrez le nom de votre service, ainsi que les données d'identification. Vous pouvez utiliser les valeurs par défaut.
   
   e. Cliquez sur **Créer**.
 
-2. Si vous n'en disposez pas déjà, installez la configuration requise suivante : 
+2. Si vous n'en disposez pas déjà, installez la configuration requise suivante :
 
     * [git ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://git-scm.com/){:new_window}
 	* [Gradle ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://gradle.org/){:new_window}
     * Java 7 ou version ultérieure
  
-3. Clonez le référentiel Git message-hub-samples en exécutant la commande suivante à partir de la ligne de commande : 
+3. Clonez le référentiel Git message-hub-samples en exécutant la commande suivante à partir de la ligne de commande :
 
     <pre class="pre">
     git clone https://github.com/ibm-messaging/message-hub-samples.git
     </pre>
 	{: codeblock}
 
-4. Accédez au répertoire de l'exemple de console Java en exécutant la commande suivante : 
+4. Accédez au répertoire de l'exemple de console Java en exécutant la commande suivante :
 
     <pre class="pre">
     cd message-hub-samples/kafka-java-console-sample
@@ -80,17 +77,17 @@ Procédez comme suit :
     </pre>
 	{: codeblock}
 
-6. Démarrez le consommateur sur votre console en exécutant la commande suivante : 
+6. Démarrez le consommateur sur votre console en exécutant la commande suivante :
 
-    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar
+    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar 
 	<var class="keyword varname">kafka_brokers_sasl</var> <var class="keyword varname">kafka_admin_url</var> <var class="keyword varname">api_key</var> -consumer</pre>
     {: codeblock}
     
-    Cet exemple utilise un sujet nommé `kafka-java-console-sample-topic`. Si le sujet n'existe pas déjà, l'exemple le crée à l'aide de l'API d'administration {{site.data.keyword.messagehub}}. Pour envoyer et recevoir des messages, l'exemple utilise l'API Java Apache Kafka. 
+    Cet exemple utilise un sujet nommé `kafka-java-console-sample-topic`. Si le sujet n'existe pas déjà, l'exemple le crée à l'aide de l'API d'administration {{site.data.keyword.messagehub}}. Pour envoyer et recevoir des messages, l'exemple utilise l'API Java Apache Kafka.
 
-    Pour trouver les valeurs de *kafka_brokers_sasl*, *kafka_admin_url* et *api_key*, accédez à votre instance {{site.data.keyword.messagehub}} dans {{site.data.keyword.Bluemix_notm}}, cliquez sur l'onglet **Données d'identification pour le service** et sélectionnez les **Données d'identification** que vous souhaitez utiliser. 
+    Pour trouver les valeurs de *kafka_brokers_sasl*, *kafka_admin_url* et *api_key*, accédez à votre instance {{site.data.keyword.messagehub}} dans {{site.data.keyword.Bluemix_notm}}, cliquez sur l'onglet **Données d'identification pour le service** et sélectionnez les **Données d'identification** que vous souhaitez utiliser.
     
-	**Important :** *kafka_brokers_sasl* doit être une chaîne unique, encadrée de guillemets. Par exemple : 
+	**Important :** *kafka_brokers_sasl* doit être une chaîne unique, encadrée de guillemets. Par exemple :
 
     <pre class="pre">
     "host1:port1,host2:port2"
@@ -99,14 +96,14 @@ Procédez comme suit :
 
     Il est conseillé d'utiliser tous les hôtes Kafka répertoriés dans les **Données d'identification** que vous avez sélectionnées.
 
-7. Démarrez le producteur sur votre console en exécutant la commande suivante : 
+7. Démarrez le producteur sur votre console en exécutant la commande suivante :
    
-    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar
+    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar 
 	<var class="keyword varname">kafka_brokers_sasl</var> <var class="keyword varname">kafka_admin_url</var> <var class="keyword varname">api_key</var> -producer</pre>
  {: codeblock}
   
 8. Vous devriez voir les messages envoyés par le producteur apparaître sur dans le consommateur. Voici
-un exemple de sortie : 
+un exemple de sortie :
 
     ```
     [2016-11-30 17:30:53,492] INFO Running in local mode. (com.messagehub.samples.MessageHubConsoleSample)

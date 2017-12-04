@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-02-07"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -24,16 +24,14 @@ Dans {{site.data.keyword.messagehub}}, les applications envoient des
 données en créant un message et en l'envoyant à un sujet. Pour recevoir des messages,
 les applications s'abonnent à un sujet et choisissent de recevoir tous les messages du sujet ou de partager les messages entre elles.
 {{site.data.keyword.messagehub}} héberge et gère les messages dans un ordre
-précis. Contrairement aux systèmes de messagerie traditionnels, {{site.data.keyword.messagehub}} fournit les sujets, mais pas les files d'attente. 
-{{site.data.keyword.messagehub}} propose cependant deux modes de partage des
+précis. Contrairement aux systèmes de messagerie traditionnels, {{site.data.keyword.messagehub}} fournit les sujets, mais pas les files d'attente. {{site.data.keyword.messagehub}} propose cependant deux modes de partage des
 messages entre les applications destinataires, ce qui résulte en un comportement
-similaire à celui des files d'attente. 
+similaire à celui des files d'attente.
 
 Vous pouvez utiliser {{site.data.keyword.messagehub}} pour effectuer les
-tâches suivantes : 
+tâches suivantes :
 
-* Connecter les microservices les uns aux autres.
-* Décharger des travaux vers des processus d'agent de back end. 
+* Décharger des travaux vers des processus d'agent de back end.
 * Connecter des données de flux à des fonctions d'analyse pour en tirer des informations importantes.
-* Publier des données d'événement sur plusieurs applications pour qu'elles réagissent en temps réel. 
-* Transférer des données vers un autre service, par exemple, le stockage à long terme. 
+* Publier des données d'événement sur plusieurs applications pour qu'elles réagissent en temps réel.
+* Transférer des données vers un autre service, par exemple, le stockage à long terme.

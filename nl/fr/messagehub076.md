@@ -15,7 +15,8 @@ lastupdated: "2016-11-22"
 # Pourquoi utiliser l'API {{site.data.keyword.mql}} ?
 {: #why_mql}
 
-L'API {{site.data.keyword.mql}} offre un niveau plus élevé d'abstraction que l'API Kafka. {{site.data.keyword.mql}} permet d'écrire de manière rapide et portable les applications dans un modèle de messagerie unifiée qui prend en charge à la fois les masques de messagerie de publication/abonnement et de file d'attente. {:shortdesc}
+L'API {{site.data.keyword.mql}} offre un niveau plus élevé d'abstraction que l'API Kafka. {{site.data.keyword.mql}} permet d'écrire de manière rapide et portable les applications dans un modèle de messagerie unifiée qui prend en charge à la fois les masques de messagerie de publication/abonnement et de file d'attente. 
+{:shortdesc}
 
 Les applications échangent des messages grâce à des destinations créées de manière dynamique, que vous pouvez structurer hiérarchiquement (par exemple,
 <code>‘/sports/football’</code>), regrouper à l'aide de caractères génériques (par exemple,

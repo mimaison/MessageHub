@@ -24,8 +24,8 @@ Les messages {{site.data.keyword.mql}} sont stockés dans un sujet Kafka sous-ja
 <table border='1'>
 <caption>Tableau 1. Format de message Kafka</caption>
   <tr>
-    <th> Clé</th>
-    <th> Valeur</th>
+    <th> Clé </th>
+    <th> Valeur </th>
   </tr>
   <tr>
     <td> Facultative (non utilisée par l'API)

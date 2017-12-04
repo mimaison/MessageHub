@@ -18,7 +18,7 @@ lastupdated: "2017-03-02"
 
 L'exemple d'API Java&trade; Kafka contient un producteur et un consommateur, codés en Java, qui utilisent directement l'API Kafka. Cet exemple peut être exécuté en local ou dans {{site.data.keyword.Bluemix_short}}.
 
-L'exemple de code est disponible dans le [projet GitHub message-hub-samples ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample){:new_window}.Bien qu'il utilise l'API Kafka pour envoyer et recevoir des messages, il utilise l'API d'administration de {{site.data.keyword.messagehub}} pour créer le sujet auquel il en envoie et dont il en reçoit.
+L'exemple de code est disponible dans le [projet GitHub message-hub-samples ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample){:new_window}. Bien qu'il utilise l'API Kafka pour envoyer et recevoir des messages, il utilise l'API d'administration de {{site.data.keyword.messagehub}} pour créer le sujet auquel il en envoie et dont il en reçoit.
 
 Pour plus d'informations sur la configuration et l'exécution de l'exemple, voir le fichier [README.md ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample){:new_window}.
 

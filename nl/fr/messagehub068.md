@@ -46,7 +46,7 @@ la confidentialité de vos données :
 {: #encryption_payloads notoc}
 
 Le protocole TLS chiffre les données des messages en vue de leur transmission entre {{site.data.keyword.messagehub}} et les clients. {{site.data.keyword.messagehub}}
-stocke les données des messages au repos et les journaux des messages sur des disques chiffrés. 
+stocke les données des messages au repos et les journaux des messages sur des disques chiffrés.
 
 
 

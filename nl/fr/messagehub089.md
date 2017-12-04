@@ -17,9 +17,9 @@ lastupdated: "2017-03-10"
 Le pont {{site.data.keyword.objectstorageshort}} vous permet d'archiver des données provenant des sujets Kafka de {{site.data.keyword.messagehub}} dans une instance du [service {{site.data.keyword.objectstorageshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/services/ObjectStorage/index.html){:new_window} {{site.data.keyword.Bluemix_short}}. Le
 pont consomme des lots de messages issus de Kafka et transfère les données des messages sous forme d'objets vers un conteneur du service {{site.data.keyword.objectstorageshort}}. En
 configurant le pont {{site.data.keyword.objectstorageshort}}, vous pouvez contrôler le mode de transfert des données sous forme d'objets vers {{site.data.keyword.objectstorageshort}}. Les
-propriétés que vous pouvez configurer sont les suivantes : 
+propriétés que vous pouvez configurer sont les suivantes :
 
-* Le nom du conteneur dans lequel les objets sont inscrits. 
+* Le nom du conteneur dans lequel les objets sont inscrits.
 * La fréquence de transfert des objets vers le service {{site.data.keyword.objectstorageshort}}.
 * La quantité de données écrites dans chaque objet avant son transfert vers le service {{site.data.keyword.objectstorageshort}}.
 
@@ -40,13 +40,13 @@ perte, mais avec un faible risque de duplication.
 Vous pouvez contrôler le nombre d'enregistrements lus depuis Kafka avant
 l'écriture des données dans l'instance de service
 {{site.data.keyword.objectstorageshort}} à l'aide des propriétés ci-après. Indiquez
-ces propriétés lorsque vous créez ou mettez à jour un pont : 
+ces propriétés lorsque vous créez ou mettez à jour un pont :
 <dl><dt>`"uploadDurationThresholdSeconds"`</dt> 
 <dd>Définit une durée en secondes au bout de laquelle les données accumulées à partir de Kafka
 sont transférées vers le service {{site.data.keyword.objectstorageshort}}.</dd>
 <dt>`"uploadSizeThresholdKB"`</dt>
 <dd>Contrôle la quantité de données en kilooctets accumulées à partir de Kafka avant leur
-transfert vers le service {{site.data.keyword.objectstorageshort}}. </dd>
+transfert vers le service {{site.data.keyword.objectstorageshort}}.</dd>
 </dl>
 
 Le transfert des données lues à partir de Kafka par le pont {{site.data.keyword.objectstorageshort}} vers le service
@@ -57,9 +57,9 @@ transférées peuvent ainsi arriver plus tard ou être plus volumineuses que ce 
 
 Le pont {{site.data.keyword.objectstorageshort}} concatène les messages en utilisant des caractères de retour à la ligne comme séparateurs lorsqu'il écrit les
 données dans {{site.data.keyword.objectstorageshort}}. Du fait de ces
-séparateurs, le pont ne convient ni aux messages contenant des caractères de retour à la ligne imbriqués, ni aux données de message binaires. 
+séparateurs, le pont ne convient ni aux messages contenant des caractères de retour à la ligne imbriqués, ni aux données de message binaires.
 
-## Partitionnement des données en objets par le pont {{site.data.keyword.objectstorageshort}} 
+## Partitionnement des données en objets par le pont {{site.data.keyword.objectstorageshort}}
 {: notoc}
 
 Le pont {{site.data.keyword.objectstorageshort}} offre une fonctionnalité
@@ -81,10 +81,10 @@ en objets {{site.data.keyword.objectstorageshort}} :
 ## Partitionnement par position de message Kafka
 {: notoc}
 
-Pour partitionner des données selon la position de message Kafka, procédez comme suit : 
+Pour partitionner des données selon la position de message Kafka, procédez comme suit :
 
-1. Configurez un pont sans la propriété `"inputFormat"`. 
-2. Spécifiez un objet avec une propriété `"type"` définie sur la valeur `"kafkaOffset"` dans le tableau `"partitioning"`.  
+1. Configurez un pont sans la propriété `"inputFormat"`.
+2. Spécifiez un objet avec une propriété `"type"` définie sur la valeur `"kafkaOffset"` dans le tableau `"partitioning"`. 
 
     Exemple :
     <pre class="pre"><code>
@@ -130,7 +130,7 @@ positions sont comprises dans la plage 1000 - 1999, et ainsi de suite.
 ## Partitionnement par date ISO 8601
 {: notoc}
 
-Pour partitionner des données selon la date ISO 8601, procédez comme suit : 
+Pour partitionner des données selon la date ISO 8601, procédez comme suit :
 
 1. Configurez un pont avec la propriété `"inputFormat"` définie sur `"json"`. Vous
 ne pouvez pas utiliser une propriété `"inputFormat"` autre que `"json"`.
@@ -164,7 +164,7 @@ ne pouvez pas utiliser une propriété `"inputFormat"` autre que `"json"`.
 	Le partitionnement par date ISO 8601 exige que les messages Kafka aient un format JSON valide. La
 valeur de `"propertyName"` dans le JSON utilisé pour configurer le pont
 doit correspondre à la zone de date ISO 	8601 dans chaque message Kafka. Dans cet exemple, la zone `"timestamp"` doit contenir une valeur de date ISO 8601
-valide. Les messages sont ensuite partitionnés selon leurs dates. 
+valide. Les messages sont ensuite partitionnés selon leurs dates.
 	
 	Un pont configuré comme dans cet exemple génère des objets dont les noms sont spécifiés comme suit :
 	`<object_a>` contient les messages JSON dont les zones

@@ -25,7 +25,7 @@ gem 'mqlight', '~> 1.0'
 ```
 {: codeblock}
 
-Ajoutez l'instruction require suivante à votre fichier source : 
+Ajoutez l'instruction require suivante à votre fichier source :
 
 ```
 require ‘mqlight’

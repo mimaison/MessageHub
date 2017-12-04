@@ -16,13 +16,13 @@ lastupdated: "2016-11-22"
 {: #mql_how}
 
 
-Pour utiliser l'API, ajoutez une référence à l'API du client {{site.data.keyword.mql}} la plus récente correspondant au langage choisi comme suit : 
+Pour utiliser l'API, ajoutez une référence à l'API du client {{site.data.keyword.mql}} la plus récente correspondant au langage choisi comme suit :
 
 
 ## Java
 {: #mql_java_how notoc}
 
-Ajoutez la référence suivante dans le fichier <code>Maven pom</code> : 
+Ajoutez la référence suivante dans le fichier <code>Maven pom</code> :
 
 ```
 <dependency>
@@ -43,7 +43,7 @@ Ajoutez la référence suivante dans la section dependency du fichier <code>pack
 <pre class="pre"><code>"mqlight" : "1.0.x"</code></pre>
 {: codeblock}
 
-Ajoutez l'instruction require suivante à votre fichier source : 
+Ajoutez l'instruction require suivante à votre fichier source :
 
 <pre class="pre"><code>var mqlight = require(‘mqlight’);</code></pre>
 {: codeblock}
@@ -73,7 +73,6 @@ require ‘mqlight’
 {: #mql_python_how notoc}
 
 Ajoutez la référence suivante dans le fichier <code>requirements.txt</code> :
- 
 
 ```
 git+git://github.com/mqlight/python-mqlight.git@readthedocs

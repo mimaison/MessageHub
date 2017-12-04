@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,11 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## Nombre d'instances {{site.data.keyword.messagehub}} par espace {{site.data.keyword.Bluemix_notm}}
-{: #instances_space notoc}
-
-Vous ne pouvez disposer que d'une instance {{site.data.keyword.messagehub}} par espace {{site.data.keyword.Bluemix_notm}}.
-
 ##Sujets et partitions
 {: #topics_partitions notoc}
 
@@ -31,7 +26,7 @@ Vous ne pouvez disposer que d'une instance {{site.data.keyword.messagehub}} par 
 partitions supplémentaires, vous devez utiliser un nouvel espace {{site.data.keyword.Bluemix_notm}}.
 
 ## Conservation des messages
-{: #message_retention notoc}
+{: #message_retention}
 
 Par défaut, les messages sont conservés dans Kafka pendant 24 heures maximum et chaque partition ne peut pas dépasser 1 Go. Si le plafond de 1 Go est atteint, les messages les plus anciens sont supprimés pour que la limite soit respectée.
 
@@ -40,12 +35,12 @@ Vous pouvez modifier la durée de conservation des messages lorsque vous créez 
 ## Création et suppression de sujets dans Kafka
 {: #create_delete notoc}
 
-Dans Kafka, la création et la suppression de sujets sont des opérations asynchrones susceptibles de prendre un certain temps. Il est conseillé d'éviter l'utilisation de modèles qui reposent sur la création rapide et la suppression de sujets, ou sur la suppression rapide et la re-création de sujets. 
+Dans Kafka, la création et la suppression de sujets sont des opérations asynchrones susceptibles de prendre un certain temps. Il est conseillé d'éviter l'utilisation de modèles qui reposent sur la création rapide et la suppression de sujets, ou sur la suppression rapide et la re-création de sujets.
 
 ## API REST Kafka
 {: #trouble_rest notoc}
 
-*  Seul le format binaire intégré est pris en charge pour les demandes et les réponses. Le format Avro intégré n'est pas pris en charge.
+*  Seul le format binaire intégré est pris en charge pour les demandes et les réponses. Les formats Avro et JSON intégrés ne sont pas pris en charge.
 *  Les demandes simultanées ne sont pas prises en charge pour une instance consommateur.
    Les demandes de lecture, de validation ou de suppression correspondant à une instance consommateur ne doivent être envoyées qu'après réception d'une réponse aux demandes en attente pour cette instance.
 
@@ -59,14 +54,13 @@ répond avec l'erreur HTTP suivante :
 <code>429 Too Many Requests</code>
 {:screen}
 
-Si vous rencontrez cette erreur, patientez et soumettez à nouveau la demande. 
+Si vous rencontrez cette erreur, patientez et soumettez à nouveau la demande.
 
 ## Redémarrage quotidien de l'API REST Kafka
 {: #rest_restart notoc}
 
 L'API REST Kafka redémarre une fois par jour pendant un court laps de
-temps. Au cours de cette période, elle est susceptible de ne plus être disponible.
-Si cela se produit, il est conseillé de relancer votre demande. Après le redémarrage
+temps. Au cours de cette période, elle est susceptible de ne plus être disponible. Si cela se produit, il est conseillé de relancer votre demande. Après le redémarrage
 de l'API REST, vous devez créer à nouveau vos instances consommateur Kafka. Dans ce cas,
 l'API REST renvoie le code JSON suivant :
 
@@ -78,5 +72,4 @@ l'API REST renvoie le code JSON suivant :
 {: #kafka_consumer notoc}
 
 L'API de consommateur simple ou de haut niveau Apache Kafka 0.8.2 ne peut pas être utilisée
-avec {{site.data.keyword.messagehub}}. A la place, utilisez la nouvelle API de consommateur
-Kafka 0.9.
+avec {{site.data.keyword.messagehub}}. Utilisez à la place la toute première API consommateur Kafka prise en charge, à savoir l'API consommateur 0.9.

@@ -35,7 +35,7 @@ Si vous spécifiez 'null' comme paramètre endpointService de l'appel create(), 
 
 **Node.js**
 
-Procédez à l'extraction des informations <code>user</code>, <code>password</code> et 
+Procédez à l'extraction des informations <code>user</code>, <code>password</code> et
 <code>mqlight_lookup_url</code> de VCAP_SERVICES et employez-les pour créer le client comme suit :
 
 <pre>
@@ -53,9 +53,8 @@ var mqlightClient = mqlight.createClient(opts, function(err) {
 
 **Ruby**
 
-Procédez à l'extraction des informations <code>user</code>, <code>password</code> et 
+Procédez à l'extraction des informations <code>user</code>, <code>password</code> et
 <code>mqlight_lookup_url</code> de VCAP_SERVICES et employez-les pour créer le client comme suit :
-
 <pre>
 <code>vcap_services = JSON.parse(ENV['VCAP_SERVICES'])
 conn_details = vcap_services['messagehub']
@@ -72,9 +71,8 @@ set :client, Mqlight::BlockingClient.new(service, opts)
 
 **Python**
 
-Procédez à l'extraction des informations <code>user</code>, <code>password</code> et 
+Procédez à l'extraction des informations <code>user</code>, <code>password</code> et
 <code>mqlight_lookup_url</code> de VCAP_SERVICES et employez-les pour créer le client comme suit :
-
 <pre>
 <code>vcap_services = json.loads(os.environ.get('VCAP_SERVICES'))
 conn_details = vcap_services['messagehub'][0]
@@ -83,7 +81,7 @@ security_options = {
       'user': str(conn_details['credentials']['user']),
       'password': str(conn_details['credentials']['password'])
 }
-client = mqlight.Client(service=service,
+client = mqlight.Client(service=service, 
                         security_options=security_options,
                         on_started=on_started)</code>
 </pre>

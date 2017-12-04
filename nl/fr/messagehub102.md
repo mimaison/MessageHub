@@ -23,7 +23,7 @@ Ajoutez la référence suivante dans la section dependency du fichier <code>pack
 <pre class="pre"><code>"mqlight" : "1.0.x"</code></pre>
 {: codeblock}
 
-Ajoutez l'instruction require suivante à votre fichier source : 
+Ajoutez l'instruction require suivante à votre fichier source :
 
 <pre class="pre"><code>var mqlight = require(‘mqlight’);</code></pre>
 {: codeblock}
