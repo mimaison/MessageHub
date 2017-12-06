@@ -34,4 +34,3 @@ Beachten Sie außerdem die folgenden Hinweise:
 * Die Grenzwerte für Nachrichten sind mit {{site.data.keyword.messagehub}} konsistent, können jedoch von anderen Servern abweichen, die
 die {{site.data.keyword.mql}}-API unterstützen. Weitere Informationen finden Sie in [Maximalwerte](/docs/services/MessageHub/messagehub083.html).
 * JMS wird nicht unterstützt.
-* Es darf nur eine {{site.data.keyword.messagehub}}-Instanz für jeden {{site.data.keyword.Bluemix_notm}}-Bereich geben.

@@ -17,8 +17,7 @@ lastupdated: "2017-02-13"
 
 Zum Verbinden einer App mit dem Service muss die App den Benutzer <code>user</code>,
 das Kennwort <code>password</code> und die Details für <code>mqlight_lookup_url</code> aus
-[Umgebungsvariable VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html) verwenden.
-Verwenden Sie die nachfolgende Anleitung für Ihre gewünschte Sprache:
+[Umgebungsvariable VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html) verwenden. Verwenden Sie die nachfolgende Anleitung für Ihre gewünschte Sprache:
 
 **Für Java**
 
@@ -88,7 +87,7 @@ security_options = {
       'user': str(conn_details['credentials']['user']),
       'password': str(conn_details['credentials']['password'])
 }
-client = mqlight.Client(service=service,
+client = mqlight.Client(service=service, 
                         security_options=security_options,
                         on_started=on_started)</code>
 </pre>

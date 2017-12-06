@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,11 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## Anzahl der {{site.data.keyword.messagehub}}-Instanzen für jeden {{site.data.keyword.Bluemix_notm}}-Bereich
-{: #instances_space notoc}
-
-Es darf nur eine {{site.data.keyword.messagehub}}-Instanz für jeden {{site.data.keyword.Bluemix_notm}}-Bereich geben.
-
 ##Topics und Partitionen
 {: #topics_partitions notoc}
 
@@ -31,7 +26,7 @@ Es darf nur eine {{site.data.keyword.messagehub}}-Instanz für jeden {{site.data
 Erstellung weiterer Partitionen müssen Sie einen neuen {{site.data.keyword.Bluemix_notm}}-Bereich verwenden.
 
 ## Aufbewahrungsdauer für Nachrichten
-{: #message_retention notoc}
+{: #message_retention}
 
 In Kafka werden Nachrichten standardmäßig bis zu 24 Stunden aufbewahrt und jede Partition wird auf
 1 GB begrenzt. Wenn die Obergrenze von 1 GB erreicht ist, werden die ältesten Nachrichten gelöscht, damit
@@ -52,9 +47,9 @@ und erneute Erstellen von Topics.
 ## Kafka-REST-API
 {: #trouble_rest notoc}
 
-*  Nur das eingebettete Binärformat wird für Anforderungen und Antworten unterstützt. Das eingebettete Avro-Format wird nicht unterstützt.
-*  Gleichzeitige Anforderungen werden für eine Konsumenteninstanz nicht unterstützt.
-   Lese-, Commit- oder Löschanforderungen, die sich auf eine Konsumenteninstanz beziehen,
+*  Nur das eingebettete Binärformat wird für Anforderungen und Antworten unterstützt. Die eingebetteten Avro- und JSON-Formate werden nicht unterstützt.
+*  Gleichzeitige Anforderungen werden für eine Consumer-Instanz nicht unterstützt.
+   Lese-, Commit- oder Löschanforderungen, die sich auf eine Consumer-Instanz beziehen,
 sollten erst gesendet werden, wenn für alle ausstehenden Anforderungen dieser Instanz entsprechende Antworten empfangen wurden.
 
 ## Ratenbegrenzung in der Kafka-REST-API
@@ -75,7 +70,7 @@ Wenn dieser Fehler angezeigt wird, warten Sie etwas und übergeben Sie die Anfor
 Die Kafka-REST-API wird einmal pro Tag für einen kurzen Zeitraum
 erneut  gestartet. In diesem Zeitraum ist die Kafka-REST-API möglicherweise
 nicht verfügbar. In diesem Fall wird empfohlen, dass Sie Ihre Anforderung
-wiederholen. Nach dem Neustart der REST-API müssen Sie Ihre Kafka-Konsumenteninstanzen
+wiederholen. Nach dem Neustart der REST-API müssen Sie Ihre Kafka-Consumer-Instanzen
 erneut erstellen. In diesem Fall gibt die
 REST-API den folgenden JSON-Code zurück:
 
@@ -83,7 +78,8 @@ REST-API den folgenden JSON-Code zurück:
 ```
 {:screen}
 
-## Allgemeine Kafka-Konsumenten-API
+## Allgemeine Kafka-Consumer-API
 {: #kafka_consumer notoc}
 
-Die einfache oder allgemeine Apache Kafka-Konsumenten-API der Version 0.8.2 kann nicht mit {{site.data.keyword.messagehub}} verwendet werden. Verwenden Sie stattdessen die neue Konsumenten-API von Kafka 0.9.
+Die einfache oder allgemeine Apache Kafka-Consumer-API der Version 0.8.2 kann nicht mit {{site.data.keyword.messagehub}} verwendet werden. Stattdessen können Sie die früheste unterstützte Version der Kafka-Consumer-API verwenden, Version 0.9.
+

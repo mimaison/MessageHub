@@ -12,13 +12,13 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Unterschiede in Message Hub zwischen Bluemix Public- und Bluemix Dedicated-Umgebungen
+# Unterschiede in Message Hub zwischen Public- und Dedicated-Umgebungen von {{site.data.keyword.Bluemix_notm}}
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}} ist eine nach offenen Standards konzipierte cloudbasierte Plattform
 zum Erstellen, Ausführen und Verwalten von Anwendungen. {{site.data.keyword.Bluemix_notm}} stellt öffentliche
 und dedizierte Implementierungsmodelle bereit. {{site.data.keyword.messagehub}} ist in beiden
-Umgebungen verfügbar. 
+Umgebungen verfügbar.
 
 ## {{site.data.keyword.Bluemix_notm}} Public-Umgebung
 {: notoc}
@@ -40,14 +40,14 @@ Weitere Informationen finden Sie unter [{{site.data.keyword.Bluemix_notm}} Publi
 
 {{site.data.keyword.Bluemix_notm}} Dedicated stellt eine stärker isolierte Umgebung
 bereit, in der Ihre Infrastruktur nicht zur gemeinsamen Nutzung freigegeben und in einem separaten
-und von {{site.data.keyword.IBM_notm}} verwalteten SoftLayer-Konto gehostet wird.
-Diese Umgebung ist über eine sichere Verbindung mit {{site.data.keyword.Bluemix_notm}} Public und mit Ihrem eigenen Netz verbunden.
+und von {{site.data.keyword.IBM_notm}} verwalteten SoftLayer-Konto gehostet wird. Diese Umgebung ist über eine sichere Verbindung mit {{site.data.keyword.Bluemix_notm}} Public und mit Ihrem eigenen Netz verbunden.
 
 In einer dedizierten Instanz von {{site.data.keyword.messagehub}} wird der Service an sich
 in Rechnung gestellt und nicht der Umfang der Nutzung. Sie können innerhalb der Umgebung bis zu 75 Partitionen
 nutzen, einschließlich aller Organisationen und Bereiche. Für jede Partition gilt eine Obergrenze von 10 GB, um sicherzustellen, dass
-der vorhandene Speicherplatz im Cluster nicht überschritten wird. 
+der vorhandene Speicherplatz im Cluster nicht überschritten wird.
 
+Die Dedicated-Version von {{site.data.keyword.messagehub}} kann nur mit {{site.data.keyword.Bluemix_notm}} Dedicated bereitgestellt werden; eine syndizierte Version des öffentlichen Service kann jedoch zur Verfügung gestellt werden, wenn Sie andere dedizierte Umgebungen verwenden.
 Die Kibana- und Grafana-Dashboards zum Überwachen des Service werden in {{site.data.keyword.Bluemix_notm}} Dedicated nicht unterstützt.
 
 Weitere Informationen finden Sie unter [{{site.data.keyword.Bluemix_notm}} Dedicated ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window}.

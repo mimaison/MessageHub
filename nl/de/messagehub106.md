@@ -20,7 +20,7 @@ bereit als Kafka, d. h. sie ist leichter zu erlernen und in Ihren Anwendungen ei
 {:shortdesc}
 
 Das Auswahlkriterium für die Verwendung eines Kafka-Clients oder der {{site.data.keyword.mql}}-API ist
-die zu erstellende Messaging-Topologie: 
+die zu erstellende Messaging-Topologie:
 
 * Mit Kafka erstellen Sie eine kleine Anzahl von Topics, die eine Vielzahl von Partitionen für jedes Topic enthalten können, um eine hohe Skalierbarkeit zu erzielen. Mithilfe von Consumergruppen können Consumer Nachrichten zwar gemeinsam nutzen, doch jeder Consumer muss darauf achten, dass die zugeordnete Nachrichtenrate auch tatsächlich verarbeitet werden kann.
 * Mit der {{site.data.keyword.mql}}-API können Sie eine große Anzahl von Topics mit hierarchisch strukturierten Topicnamen verwenden (z. B. <code>‘/sports/football’</code> und <code>‘/sports/tiddlywinks’</code>). Dies vereinfacht die gemeinsame Nutzung von Nachrichten zwischen Consumern erheblich.

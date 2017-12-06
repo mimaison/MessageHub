@@ -12,17 +12,16 @@ lastupdated: "2017-05-11"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Vorgehensweise bei der Migration des Kafka-Clients von Version 0.9.x auf Version 0.10.x
+# Vorgehensweise bei der Migration des Kafka-Clients von Version 0.9.X auf Version 0.10.X oder 0.11.X
 {: #kafka_migrate}
 
 
-Wenn Sie mit den Java-Clients arbeiten, können Sie jetzt die
-offiziell verfügbaren Kafka-Clients der Version 0.10.x verwenden. Es wird dringend
-empfohlen, von der Version 0.9.x auf den aktuellen Stand der Version 0.10.x
-umzustellen (die neueste Version ist 0.10.2.1). Führen Sie die folgenden Schritte aus: 
+Wenn Sie mit den Java-Clients arbeiten, können Sie die offiziell verfügbaren Kafka-Clients der
+Version 0.10.X oder 0.11.X verwenden. Es wird dringend empfohlen, von der Version 0.9.X auf den neuesten
+Stand der Version 0.10.X oder 0.11.X umzustellen (alle neueren Versionen werden unterstützt). Führen Sie die folgenden Schritte aus:
 
 1. Löschen Sie das JAR-Modul für die {{site.data.keyword.messagehub}}-Anmeldung.
-2. Ändern Sie Ihre Datei <code>jaas.conf</code> wie folgt: 
+2. Ändern Sie Ihre Datei <code>jaas.conf</code> wie folgt:
     ```
         KafkaClient {
           org.apache.kafka.common.security.plain.PlainLoginModule required

@@ -24,6 +24,6 @@ Back-End sendet, und ein Back-End zum Verarbeiten der Nachrichten, das die Wört
 und die Nachrichten anschließend an das Front-End zurückgibt. Dieses Beispiel zeigt, wie einfach Apps mithilfe der
 {{site.data.keyword.mql}}-API miteinander kommunizieren können. Sie können die {{site.data.keyword.mql}}-API
 auch zum Auslagern von Verarbeitungsprozessen verwenden. Das Auslagern ist eine Schlüsselfunktion zum Erstellen von
-skalierbaren, flexibel verbundenen und verteilten Apps. 
+skalierbaren, flexibel verbundenen und verteilten Apps.
 
 Den zugehörigen Beispielcode finden Sie im [GitHub-Projekt 'message-hub-samples' ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/ibm-messaging/message-hub-samples/tree/master/mqlight){:new_window}.

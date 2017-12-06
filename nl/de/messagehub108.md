@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-16"
+lastupdated: "2017-10-17"
 
 ---
 
@@ -17,11 +17,31 @@ lastupdated: "2017-08-16"
 
 Antworten auf häufig gestellte Fragen zum {{site.data.keyword.IBM}} {{site.data.keyword.messagehub}}-Service.
 
-## Was ist der Kafka-Standardwert für offsets.retention.minutes?
-{: #offsets notoc}
-Der Standardwert ist 7 Tage. 
+<!--17/10/17 - Karen: same info duplicated at messagehub104 -->
+## Wie können mit Kafka-APIs Topics erstellt und gelöscht werden?
+{: #topic_admin notoc}
 
-Die Offset-Aufbewahrungsdauer gilt systemweit und kann nicht für eine einzelne Topicebene festgelegt werden. Für alle Consumergruppen werden nur gespeicherte Offsets für einen Zeitraum von 7 Tagen bereitgestellt, selbst wenn die Aufbewahrungsdauer für das zugehörige Topic auf den Maximalwert von 30 Tagen erhöht wurde. 
+Wenn Sie einen Kafka-Client der Version 0.11 oder höher verwenden oder Kafka Streams Version 0.10.2.0 oder höher, können Sie APIs verwenden, um Topics zu erstellen oder zu löschen. Für die zulässigen Einstellungen beim Erstellen von Topics gelten bestimmte Einschränkungen. Gegenwärtig können Sie nur die folgenden Einstellungen ändern:
+
+<dl>
+<dt>cleanup.policy</dt>
+<dd>Zulässige Werte sind <code>delete</code> (Standardwert), <code>compact</code> oder <code>delete,compact</code></dd>
+<dt>retention.ms</dt>
+<dd>Der Standardaufbewahrungszeitraum ist 24 Stunden. Der Mindestwert ist 1 Stunde und der Höchstwert ist
+30 Tage. Geben Sie den Wert in Stunden an.
+
+<p>**Anmerkung:**
+Wenn für die Bereinigungsrichtlinie (cleanup.policy) nur der Wert <code>compact</code> angegeben ist, wird automatisch der Wert <code>delete</code>
+hinzugefügt, aber die Löschfunktion wird auf Zeitbasis inaktiviert. Die Nachrichten in dem Topic werden bis 1 GB komprimiert. Die Löschfunktion wird
+erst beim Überschreiten dieses Werts aktiviert.</p>
+</dd>
+</dl>
+
+## Welchen Zeitraum legt {{site.data.keyword.messagehub}} für das Protokollspeicherungsfenster für das Consumer-Offsets-Topic fest?
+{: #offsets notoc}
+{{site.data.keyword.messagehub}} speichert Consumer-Offsets für einen Zeitraum von 7 Tagen. Dies entspricht der Kafka-Konfiguration 'offsets.retention.minutes'. 
+
+Die Offset-Aufbewahrungsdauer gilt systemweit und kann nicht für eine einzelne Topicebene festgelegt werden. Für alle Consumergruppen werden nur gespeicherte Offsets für einen Zeitraum von 7 Tagen bereitgestellt, selbst wenn die Protokollspeicherungsdauer für das zugehörige Topic auf den Maximalwert von 30 Tagen erhöht wurde. 
 
 ## Wie ist das Verfügbarkeitsverhalten von {{site.data.keyword.messagehub}}?
 {: #availability notoc}

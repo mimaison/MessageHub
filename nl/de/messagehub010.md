@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-02-07"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -32,7 +32,6 @@ Anwendungen. Dies entspricht in etwa dem Ausführungsverhalten von Warteschlange
 Mit {{site.data.keyword.messagehub}} können Sie die folgenden
 Tasks ausführen:
 
-* Microservices miteinander verbinden
 * Arbeit in Back-End-Verarbeitungsprozesse auslagern
 * Streaming-Daten mit Analysen verbinden, um aussagekräftige Erkenntnisse zu gewinnen
 * Ereignisdaten in mehreren Anwendungen veröffentlichen, um in Echtzeit reagieren zu können

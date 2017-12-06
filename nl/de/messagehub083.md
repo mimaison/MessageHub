@@ -18,7 +18,7 @@ lastupdated: "2016-22-11"
 Die folgenden Grenzwerte werden für die {{site.data.keyword.mql}}-API erzwungen:
 {:shortdesc}
 
-* Das maximale Datenvolumen, das gespeichert werden kann, entspricht einer einzelnen Kafka-Partition in Ihrem Zahlungsplan (in der Regel 1 GB). Bei Überschreitung dieses Grenzwerts werden die ältesten Nachrichten in der Partition entfernt, wenn neue Nachrichten gesendet werden. 
+* Das maximale Datenvolumen, das gespeichert werden kann, entspricht einer einzelnen Kafka-Partition in Ihrem Zahlungsplan (in der Regel 1 GB). Bei Überschreitung dieses Grenzwerts werden die ältesten Nachrichten in der Partition entfernt, wenn neue Nachrichten gesendet werden.
 * Die maximale Speicherungsdauer für eine Nachricht entspricht einer einzelnen Kafka-Partition in Ihrem Zahlungsplan (in der Regel 24 Stunden). Sie können keine Nachrichten abrufen, die älter sind als diese Speicherungsdauer.
 * Die maximale Größe für eine Nachricht (ohne Header) ist 1 MB.
 * Die maximale Anzahl von Clients, die gleichzeitig verbunden sein können, ist 25.

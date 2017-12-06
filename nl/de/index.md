@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,21 +15,17 @@ lastupdated: "2017-03-02"
 # Einführung in Message Hub
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} ist ein skalierbarer und verteilter Nachrichtenbus
-mit hohem Durchsatz, mit dem Sie Ihre lokalen und externen Cloudtechnologien verbinden können.
+{{site.data.keyword.messagehub_full}} ist ein skalierbarer verteilter Messaging-Service mit
+hohem Durchsatz, der eine einfache und zuverlässige Kommunikation zwischen Anwendungen und Services ermöglicht.
 {:shortdesc}
 
 Mit {{site.data.keyword.messagehub}} können Sie die folgenden Tasks
 ausführen:
 
-* Microservices über offene Protokolle miteinander verbinden
+* Arbeit in Back-End-Verarbeitungsprozesse auslagern
 * Streaming-Daten mit Analysen verbinden, um aussagekräftige Informationen zu erhalten
 * Ereignisdaten mehreren Anwendungen zuführen, um in Echtzeit reagieren zu können
-
-Mit {{site.data.keyword.messagehub}} können Sie beispielsweise
-Bestandsänderungen veröffentlichen, einen zentralen Bus für Echtzeitdaten erstellen oder
-Arbeit in Back-End-Verarbeitungsprozesse auslagern.
+* Daten in einen anderen Service übertragen, z. B. in einen Langzeitspeicher
 
 Als Einführung in die Verwendung von {{site.data.keyword.messagehub}} zum
 Senden und Empfangen von Nachrichten können Sie das bereitgestellte Java™-Beispiel verwenden. Das
@@ -84,7 +80,7 @@ Führen Sie die folgenden Schritte aus:
 
 6. Starten Sie den Consumer in Ihrer Konsole, indem Sie den folgenden Befehl ausführen:
 
-    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar
+    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar 
 	<var class="keyword varname">kafka_brokers_sasl</var> <var class="keyword varname">kafka_admin_url</var> <var class="keyword varname">api_key</var> -consumer</pre>
     {: codeblock}
     
@@ -106,7 +102,7 @@ Führen Sie die folgenden Schritte aus:
 
 7. Starten Sie den Producer in Ihrer Konsole, indem Sie den folgenden Befehl ausführen:
    
-    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar
+    <pre class="pre">java -jar build/libs/kafka-java-console-sample-2.0.jar 
 	<var class="keyword varname">kafka_brokers_sasl</var> <var class="keyword varname">kafka_admin_url</var> <var class="keyword varname">api_key</var> -producer</pre>
  {: codeblock}
   

@@ -77,8 +77,7 @@ gleichmäßig auf die Partitionen im Kafka-Topic verteilt werden.</dd>
 
 Sie können {{site.data.keyword.IBM_notm}} MQ so konfigurieren, dass zu große Nachrichten in einem {{site.data.keyword.messagehub}}-Kafka-Datensatz gespeichert werden. Die maximale
 Größe für einen Kafka-Datensatz ist 1.000.000 Byte. Ein Teil dieser Kapazität wird jedoch anderweitig genutzt, wenn die Bridge für die
-Durchführung der Kafka-Partitionszuordnung basierend auf der MQ-Korrelations-ID und der MQ-Gruppen-ID konfiguriert ist.
-Es wird empfohlen, dass die über die MQ-Bridge gesendeten Nachrichten nicht größer als 950 Kilobyte sein sollten.
+Durchführung der Kafka-Partitionszuordnung basierend auf der MQ-Korrelations-ID und der MQ-Gruppen-ID konfiguriert ist. Es wird empfohlen, dass die über die MQ-Bridge gesendeten Nachrichten nicht größer als 950 Kilobyte sein sollten.
 
 Wenn die MQ-Bridge eine Nachricht findet, die zu groß für die Weiterleitung an Kafka ist, wird die
 Nachricht von der Bridge gelöscht und ein Protokolleintrag wird an Ihr Kibana-Dashboard ausgegeben. Das Attribut MAXMSGL

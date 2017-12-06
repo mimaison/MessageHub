@@ -18,12 +18,12 @@ lastupdated: "2016-11-22"
 Die {{site.data.keyword.mql}}-API stellt eine höhere Abstraktionsebene
 bereit als die Kafka-API. {{site.data.keyword.mql}} ermöglicht eine schnelle Erstellung
 portierbarer Apps in einem Unified Messaging-Modell, das sowohl Messaging-Systeme mit
-Warteschlangen als auch mit Publish/Subscribe unterstützt.
+Warteschlangen als auch mit Publish/Subscribe unterstützt. 
 {:shortdesc}
 
 Für den Austausch von Nachrichten zwischen Apps werden dynamisch erstellte Ziele verwendet, die
 hierarchisch strukturiert (z. B. <code>‘/sport/fussball’</code>) und durch Platzhalter gruppiert
-werden können (z. B. 
+werden können (z. B.
 <code>‘/sports/#’</code>). Außerdem können einfache Steuerelemente für Bereitstellungszusicherung und Nachrichtenablauf verwendet werden.
 Mit diesen Funktionen können Sie Szenarios wie das Auslagern von Verarbeitungsprozessen sowie Ereignisbenachrichtigung und
 Stapelverarbeitung direkt und ohne Umwege implementieren.

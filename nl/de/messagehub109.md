@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -17,12 +17,12 @@ lastupdated: "2017-08-18"
 # Fehler an das {{site.data.keyword.messagehub}}-Team melden
 {: #report_problem}
 
-Wenn ein Problem mit {{site.data.keyword.messagehub}} auftritt, überprüfen Sie zunächst die Seite 'Status' in [{{site.data.keyword.Bluemix_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://status.ng.bluemix.net/){:new_window}. 
+Wenn ein Problem mit {{site.data.keyword.messagehub}} auftritt, überprüfen Sie zuerst die Seite 'Status' in [{{site.data.keyword.Bluemix_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/status){:new_window}. 
 
 Wenn Sie Unterstützung vom {{site.data.keyword.messagehub}}-Team benötigen, sammeln Sie bitte möglichst viele der folgenden Informationen:
 {:shortdesc}
 
-1. In welcher {{site.data.keyword.Bluemix_notm}}-Region wird Ihre {{site.data.keyword.messagehub}}-Instanz bereitgestellt (z. B. 'Vereinigte Staaten (Süden)' oder 'Vereintes Königreich')? 
+1. In welcher {{site.data.keyword.Bluemix_notm}}-Region wird Ihre {{site.data.keyword.messagehub}}-Instanz bereitgestellt  (z. B. 'Vereinigte Staaten (Süden)' oder 'Vereintes Königreich')? 
 2. In welcher Schnittstelle treten Probleme auf (REST, Kafka, AMQP oder Bridges)?
 3. Wann ist das Problem zum ersten Mal aufgetreten (Datum, genaue Uhrzeit und Zeitzone)? Wie lange war Ihre App zu diesem Zeitpunkt bereits aktiv?
 4. Tritt das Problem weiterhin auf? Können Sie das Problem erneut hervorrufen?
@@ -35,9 +35,7 @@ Sie finden diese ID im Feld "instance_id" in der JSON-Umgebungsvariablen VCAP_SE
 10. Wie wirkt sich das Problem auf Ihren Service aus?
 
 
-
-
-
+Sie können IBM die zusammengestellten Informationen in einem Support-Ticket zur Verfügung stellen, indem Sie [eine Support-Anforderung übergeben![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/docs/support/index.html#open-ticket).
 
 
 

@@ -20,7 +20,7 @@ Nachrichten von Kafka im Stapelbetrieb und lädt die Nachrichtendaten als Objekt
 im {{site.data.keyword.objectstorageshort}}-Service. Durch Konfigurieren der
 {{site.data.keyword.objectstorageshort}}-Bridge können Sie steuern, wie die Daten
 als Objekte in {{site.data.keyword.objectstorageshort}} hochgeladen werden. Sie können zum Beispiel
-die folgenden Eigenschaften konfigurieren: 
+die folgenden Eigenschaften konfigurieren:
 
 * Name des Containers, in den die Objekte geschrieben werden
 * Wie oft Objekte in den {{site.data.keyword.objectstorageshort}}-Service hochgeladen werden
@@ -55,7 +55,7 @@ Kafka gelesenen Daten in den {{site.data.keyword.objectstorageshort}}-Service ho
 der erste dieser Werte, der erreicht wird. Die {{site.data.keyword.objectstorageshort}}-Bridge
 stellt jedoch nicht sicher, dass genau beim Erreichen dieser Grenzwerte Daten in den {{site.data.keyword.objectstorageshort}}-Service
 übertragen werden. Dies bedeutet, die übertragenen Daten können auch mit Verzögerung eintreffen
-oder umfangreicher sein, als die in diesen Eigenschaften angegebenen Werte. 
+oder umfangreicher sein, als die in diesen Eigenschaften angegebenen Werte.
 
 Die {{site.data.keyword.objectstorageshort}}-Bridge verwendet das Zeilenvorschubzeichen als Trennzeichen
 beim Verketten der Nachrichten, die als Daten in {{site.data.keyword.objectstorageshort}} geschrieben werden. Aufgrund dieser

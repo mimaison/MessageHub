@@ -41,10 +41,10 @@ Den zugehörigen Beispielcode finden Sie im [GitHub-Projekt 'message-hub-samples
 Wenn Sie mit den Java-Clients arbeiten, können Sie jetzt die
 offiziell verfügbaren Kafka-Clients der Version 0.10.x verwenden. Es wird dringend
 empfohlen, von der Version 0.9.x auf den aktuellen Stand der Version 0.10.x
-umzustellen (die neueste Version ist 0.10.2.1). Führen Sie die folgenden Schritte aus: 
+umzustellen (die neueste Version ist 0.10.2.1). Führen Sie die folgenden Schritte aus:
 
 1. Löschen Sie das JAR-Modul für die {{site.data.keyword.messagehub}}-Anmeldung.
-2. Ändern Sie Ihre Datei <code>jaas.conf</code> wie folgt: 
+2. Ändern Sie Ihre Datei <code>jaas.conf</code> wie folgt:
     ```
         KafkaClient {
           org.apache.kafka.common.security.plain.PlainLoginModule required
@@ -57,12 +57,15 @@ umzustellen (die neueste Version ist 0.10.2.1). Führen Sie die folgenden Schrit
 
 3. Fügen Sie die folgende Zeile in Ihren Eigenschaften 'consumer' und 'producer' hinzu: <code>sasl.mechanism=PLAIN</code>.
 
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
 
 ## Eigenschaft 'sasl.jaas.config' verwenden
 {: #sasl_prop notoc}
 Wenn Sie einen Kafka-Client der Version 0.10.2.1 oder höher verwenden, können Sie die Eigenschaft <code>sasl.jaas.config</code> anstelle einer JAAS-Datei
 für die Clientkonfiguration verwenden. Um eine Verbindung zu {{site.data.keyword.messagehub}} herzustellen, legen Sie
-<code>sasl.jaas.config</code> wie folgt fest: 
+<code>sasl.jaas.config</code> wie folgt fest:
 <pre>
 <code>    sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
     username="USERNAME" \
@@ -70,10 +73,16 @@ für die Clientkonfiguration verwenden. Um eine Verbindung zu {{site.data.keywor
 </pre>
 {:codeblock}
 
-Dabei sind USERNAME und PASSWORD die Werte aus Ihrer {{site.data.keyword.messagehub}}-Registerkarte **Serviceberechtigungsnachweise** in {{site.data.keyword.Bluemix_notm}}.
+Dabei sind USERNAME und PASSWORD die Werte auf der {{site.data.keyword.messagehub}}-Registerkarte **Serviceberechtigungsnachweise** in {{site.data.keyword.Bluemix_notm}}.
 
 Wenn Sie <code>sasl.jaas.config</code> verwenden, können Clients, die in derselben JVM ausgeführt werden, verschiedene Berechtigungsnachweise verwenden. Weitere
 Informationen finden Sie unter [Kafka-Clients konfigurieren ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window}.
+
+Für einen älteren Kafka-Client müssen Sie eine JAAS-Konfigurationsdatei zur Angabe der Berechtigungsnachweise verwenden. Dieses Verfahren ist weniger benutzerfreundlich, daher wird stattdessen die Verwendung der Eigenschaft <code>sasl.jaas.config</code> empfohlen.
+
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
 
 ## APIs für die Topicverwaltung
 {: #topic_admin notoc}
@@ -93,29 +102,6 @@ hinzugefügt, aber die Löschfunktion wird auf Zeitbasis inaktiviert. Die Nachri
 erst beim Überschreiten dieses Werts aktiviert.</p>
 </dd>
 </dl>
-
-## Unterstützung für Kafka Streams
-{: #kafka_streams notoc}
-
-Ab Version 0.10.2.0 der Streams-Bibliothek können die Topic-APIs jetzt ohne weitere Konfigurationsschritte zusammen mit {{site.data.keyword.messagehub}} verwendet werden. Geben Sie Ihre SASL-Berechtigungsnachweise in <code>sasl.jaas.config</code> oder in einer JAAS-Datei an und legen Sie für <code>replication.factor</code> den Wert 3 fest.
-
-Beispiel:
-
-<pre>
-<code>
-    props.put(StreamsConfig.REPLICATION_FACTOR_CONFIG, "3");
-    props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-    props.put("security.protocol","SASL_SSL");
-    props.put("sasl.mechanism","PLAIN");
-    props.put("ssl.protocol","TLSv1.2");
-    props.put("ssl.enabled.protocols","TLSv1.2");
-    props.put("sasl.jaas.config","org.apache.kafka.common.security.plain.PlainLoginModule required username=\"USERNAME\" password=\"PASSWORD\";");
-</code>
-</pre>
-{:codeblock}
-
-Dabei sind BOOTSTRAP_SERVERS, USERNAME und PASSWORD die Werte aus Ihrer {{site.data.keyword.messagehub}}-Registerkarte **Serviceberechtigungsnachweise** in
-{{site.data.keyword.Bluemix_notm}}.
 
 <!--
 new topic that includes content from existing topics about samples and migration
