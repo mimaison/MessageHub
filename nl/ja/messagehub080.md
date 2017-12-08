@@ -31,4 +31,3 @@ lastupdated: "2017-02-01"
 
 * メッセージ限度は {{site.data.keyword.messagehub}} と整合していますが、{{site.data.keyword.mql}} API をサポートする他のサーバーとは異なっている可能性があります。詳しくは、[最大限度](/docs/services/MessageHub/messagehub083.html)を参照してください。
 * JMS はサポートされません。
-* 各 {{site.data.keyword.Bluemix_notm}} スペースで持つことができる {{site.data.keyword.messagehub}} インスタンスは 1 つのみです。

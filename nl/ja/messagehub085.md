@@ -12,7 +12,7 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Bluemix Public 環境と Bluemix Dedicated 環境での Message Hub の相違点
+# {{site.data.keyword.Bluemix_notm}} の Public 環境と Dedicated 環境での Message Hub の相違点
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}} は、アプリケーションをビルド、実行、および管理するためのクラウド・ベースのオープン標準プラットフォームです。{{site.data.keyword.Bluemix_notm}} は、パブリック・デプロイメント・モデルと専用デプロイメント・モデルを提供します。{{site.data.keyword.messagehub}} は、両方の環境で使用可能です。
@@ -34,6 +34,7 @@ lastupdated: "2017-02-08"
 
 {{site.data.keyword.messagehub}} の専用インスタンスでは、使用量に対してではなく、サービスに対して支払います。すべての組織とスペースを含めた環境全体で、最大 75 個のパーティションを持つことができます。クラスターでスペースが不足することがないように、各パーティションの上限は 10 GB になっています。
 
+Dedicated 内の {{site.data.keyword.messagehub}} は {{site.data.keyword.Bluemix_notm}} Dedicated でのみデプロイできますが、他の専用環境を使用している場合は、弊社のパブリック・サービスのシンジケート・バージョンを使用可能にすることができます。
 当サービスをモニターするための Kibana ダッシュボードおよび Grafana ダッシュボードは、{{site.data.keyword.Bluemix_notm}} Dedicated ではサポートされていません。
 
 詳しくは、[{{site.data.keyword.Bluemix_notm}} Dedicated ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window} を参照してください。

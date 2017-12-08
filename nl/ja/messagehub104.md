@@ -54,6 +54,9 @@ Java クライアントを使用している場合、公開された 0.10.x Kafk
 
 3. コンシューマーおよびプロデューサーのプロパティーに <code>sasl.mechanism=PLAIN</code> という行を追加します。
 
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
 
 ## sasl.jaas.config プロパティーの使用
 {: #sasl_prop notoc}
@@ -68,6 +71,12 @@ Java クライアントを使用している場合、公開された 0.10.x Kafk
 ここで、USERNAME および PASSWORD は、{{site.data.keyword.Bluemix_notm}} の {{site.data.keyword.messagehub}} **「サービス資格情報」**タブからの値です。
 
 <code>sasl.jaas.config</code> を使用する場合、同じ JVM で稼働している複数のクライアントはそれぞれ異なる資格情報を使用できます。詳しくは、[Configuring Kafka clients  ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window} を参照してください。
+
+以前の Kafka クライアントでは、JAAS 構成ファイルを使用して資格情報を指定する必要がありました。この方法は不便なため、代わりに <code>sasl.jaas.config</code> プロパティーを使用することをお勧めします。
+
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
 
 ## トピック管理用の API
 {: #topic_admin notoc}
@@ -84,28 +93,6 @@ Java クライアントを使用している場合、公開された 0.10.x Kafk
 クリーンアップ・ポリシーが <code>compact</code> のみである場合、自動的に <code>delete</code> が追加されますが、時間に基づく削除は無効にされます。トピック内のメッセージは、削除される前に 1 GB にまで圧縮されます。</p>
 </dd>
 </dl>
-
-## Kafka Streams のサポート
-{: #kafka_streams notoc}
-
-Streams library 0.10.2.0 以降、トピック API はセットアップを必要とせずに {{site.data.keyword.messagehub}} とともに機能するようになりました。SASL 資格情報を <code>sasl.jaas.config</code> または JAAS ファイルを使用して指定し、<code>replication.factor</code> を 3 に設定してください。
-
-以下に例を示します。
-
-<pre>
-<code>
-    props.put(StreamsConfig.REPLICATION_FACTOR_CONFIG, "3");
-    props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-    props.put("security.protocol","SASL_SSL");
-    props.put("sasl.mechanism","PLAIN");
-    props.put("ssl.protocol","TLSv1.2");
-    props.put("ssl.enabled.protocols","TLSv1.2");
-    props.put("sasl.jaas.config","org.apache.kafka.common.security.plain.PlainLoginModule required username=\"USERNAME\" password=\"PASSWORD\";");
-</code>
-</pre>
-{:codeblock}
-
-ここで、BOOTSTRAP_SERVERS、USERNAME、および PASSWORD は、{{site.data.keyword.Bluemix_notm}} の {{site.data.keyword.messagehub}} **「サービス資格情報」**タブからの値です。
 
 <!--
 new topic that includes content from existing topics about samples and migration

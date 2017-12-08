@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,11 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## 各 {{site.data.keyword.Bluemix_notm}} スペースでの {{site.data.keyword.messagehub}} のインスタンス数
-{: #instances_space notoc}
-
-各 {{site.data.keyword.Bluemix_notm}} スペースで持つことができる {{site.data.keyword.messagehub}} インスタンスは 1 つのみです。
-
 ##トピックおよびパーティション
 {: #topics_partitions notoc}
 
@@ -30,7 +25,7 @@ lastupdated: "2017-05-05"
 *  各 {{site.data.keyword.Bluemix_notm}} スペースのパーティションは 100 までに制限されています。それより多くのパーティションを作成するには、新しい {{site.data.keyword.Bluemix_notm}} スペースを使用する必要があります。
 
 ## メッセージの保存
-{: #message_retention notoc}
+{: #message_retention}
 
 デフォルトでは、Kafka ではメッセージは最大 24 時間保存され、各パーティションは 1 GB が上限です。この 1 GB という上限に達したら、この限界を超えないよう、最も古いメッセージが破棄されます。
 
@@ -44,7 +39,7 @@ Kafka では、トピックの作成および削除は非同期操作であり�
 ## Kafka REST API
 {: #trouble_rest notoc}
 
-*  要求と応答では、バイナリー埋め込み形式のみがサポートされます。Avro 埋め込み形式はサポートされていません。
+*  要求と応答では、バイナリー埋め込み形式のみがサポートされます。Avro および JSON 埋め込み形式はサポートされません。
 *  コンシューマー・インスタンスに同時要求はサポートされません。
 コンシューマー・インスタンスに対応する読み取り、コミット、または削除の要求は、必ず、そのインスタンスの未完了要求の応答が受信されてから送信してください。
 
@@ -71,4 +66,5 @@ Kafka REST API は、短い期間中、1 日に一度再始動されます。こ
 ## Kafka ハイレベル・コンシューマー API
 {: #kafka_consumer notoc}
 
-Apache Kafka 0.8.2 の単純コンシューマー API または ハイレベル・コンシューマー API を {{site.data.keyword.messagehub}} で使用することはできません。代わりに、新しい Kafka 0.9 コンシューマー API を使用してください。
+Apache Kafka 0.8.2 の単純コンシューマー API または ハイレベル・コンシューマー API を {{site.data.keyword.messagehub}} で使用することはできません。代わりに、サポートされる最初の Kafka コンシューマー API (0.9 コンシューマー API) を使用できます。
+

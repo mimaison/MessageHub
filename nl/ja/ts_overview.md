@@ -27,9 +27,7 @@ lastupdated: "2017-05-10"
 ## 便利なリンク
 {: #troubleshooting_links notoc}
 
-*  [developerWorks&reg; の {{site.data.keyword.IBM}} {{site.data.keyword.messagehub}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/messaging/message-hub/){: new_window}
-*  [{{site.data.keyword.IBM_notm}} Messaging ブログ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/messaging/blogs/){: new_window}
-*  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_short}} 無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://apps.admin.ibmcloud.com/manage/trial/bluemix.html){: new_window}
+*  [{{site.data.keyword.Bluemix_short}} 無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://apps.admin.ibmcloud.com/manage/trial/bluemix.html){: new_window}
 *  [{{site.data.keyword.messagehub}} Java Kafka サンプル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample){: new_window}
 *  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} を使用した Web アプリケーションの作成および Cloud Foundry を使用したアプリのデプロイ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ng.bluemix.net/docs/starters/install_cli.html){: new_window}  
 *  [Apache Kafka 資料 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://kafka.apache.org/documentation.html){: new_window}
@@ -37,7 +35,6 @@ lastupdated: "2017-05-10"
 *  [A Comprehensive, Open Source REST Proxy for Kafka. ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.confluent.io/blog/a-comprehensive-open-source-rest-proxy-for-kafka/){: new_window}
 	このブログには、Kafka REST API の強みと弱みの概要が示されています。
 
-*  [MQ Light developerWorks サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/messaging/mq-light/){: new_window}
-*  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} 料金シート ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ng.bluemix.net/#/pricing){: new_window}
-*  [{{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} 前提条件 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
+*  [{{site.data.keyword.Bluemix_notm}} 料金シート ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ng.bluemix.net/#/pricing){: new_window}
+*  [{{site.data.keyword.Bluemix_notm}} 前提条件 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
 

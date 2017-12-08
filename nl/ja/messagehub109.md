@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-08-18"
 # {{site.data.keyword.messagehub}} チームへの問題の報告
 {: #report_problem}
 
-{{site.data.keyword.messagehub}} で問題が起こった場合、最初に [{{site.data.keyword.Bluemix_notm}} 状況ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://status.ng.bluemix.net/){:new_window} を確認してください。 
+{{site.data.keyword.messagehub}} で問題が起こった場合、最初に [{{site.data.keyword.Bluemix_notm}} 状況ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/status){:new_window} を確認してください。 
 
 {{site.data.keyword.messagehub}} チームから支援を受けたい場合は、以下の情報をできるだけ多く収集してください。
 {:shortdesc}
@@ -35,9 +35,7 @@ lastupdated: "2017-08-18"
 10. あなたのサービスへの問題の影響は?
 
 
-
-
-
+収集した情報は、[サポート要求を送信する ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/docs/support/index.html#open-ticket) ことにより、サポート・チケットとして IBM に提出することができます。
 
 
 

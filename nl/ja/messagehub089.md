@@ -14,7 +14,7 @@ lastupdated: "2017-03-10"
 
 # Object Storage ブリッジ 
 
-{{site.data.keyword.objectstorageshort}} ブリッジは、{{site.data.keyword.messagehub}} の Kafka トピックから {{site.data.keyword.Bluemix_short}} [{{site.data.keyword.objectstorageshort}} サービス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/services/ObjectStorage/index.html){:new_window} のインスタンスへデータを保存することを可能にします。このブリッジは、一括したメッセージを Kafka からコンシュームし、メッセージ・データをオブジェクトとして {{site.data.keyword.objectstorageshort}} サービス内のコンテナーにアップロードします。{{site.data.keyword.objectstorageshort}} ブリッジを構成することによって、データをオブジェクトとして {{site.data.keyword.objectstorageshort}} にアップロードする方法を制御できます。例えば、以下のプロパティーを構成できます。
+{{site.data.keyword.objectstorageshort}} ブリッジは、{{site.data.keyword.messagehub}} の Kafka トピックから {{site.data.keyword.Bluemix_short}} [{{site.data.keyword.objectstorageshort}} サービス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/services/ObjectStorage/index.html){:new_window} のインスタンスへデータを保存することを可能にします。このブリッジは、メッセージをまとまりで Kafka からコンシュームし、その、メッセージ・データをオブジェクトとして {{site.data.keyword.objectstorageshort}} サービス内のコンテナーにアップロードします。{{site.data.keyword.objectstorageshort}} ブリッジを構成することによって、データをオブジェクトとして {{site.data.keyword.objectstorageshort}} にアップロードする方法を制御できます。例えば、以下のプロパティーを構成できます。
 
 * オブジェクトが書き込まれる先のコンテナーの名前。
 * オブジェクトが {{site.data.keyword.objectstorageshort}} サービスにアップロードされる頻度。
@@ -34,7 +34,7 @@ lastupdated: "2017-03-10"
 <dd>Kafka から集積されたデータがどれだけの量 (キロバイト) になると {{site.data.keyword.objectstorageshort}} サービスにアップロードされるのかを制御します。</dd>
 </dl>
 
-上記の値のいずれかに到達すると、Kafka から読み取ったデータを {{site.data.keyword.objectstorageshort}} ブリッジが {{site.data.keyword.objectstorageshort}} サービスにアップロードするトリガーとなります。{{site.data.keyword.objectstorageshort}} ブリッジでは、これらのしきい値のいずれかに達した正確な時点での {{site.data.keyword.objectstorageshort}} サービスへのデータ転送は保証されていません。したがって、転送されるデータは、これらのプロパティーに指定された値よりも遅く到着したり、量が大きくなったりする可能性があります。
+上記の値のいずれかに最初に到達すると、Kafka から読み取ったデータを {{site.data.keyword.objectstorageshort}} ブリッジが {{site.data.keyword.objectstorageshort}} サービスにアップロードするトリガーとなります。{{site.data.keyword.objectstorageshort}} ブリッジでは、これらのしきい値のいずれかに達した正確な時点での {{site.data.keyword.objectstorageshort}} サービスへのデータ転送は保証されていません。したがって、転送されるデータは、これらのプロパティーに指定された値よりも遅く到着したり、量が大きくなったりする可能性があります。
 
 {{site.data.keyword.objectstorageshort}} ブリッジは、データを {{site.data.keyword.objectstorageshort}} に書き込むときに、区切り文字として改行文字を使用してメッセージを連結します。この区切り文字のため、改行文字が埋め込まれたメッセージおよびバイナリー・メッセージ・データには、このブリッジは不適切です。
 
