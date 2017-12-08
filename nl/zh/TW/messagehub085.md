@@ -12,7 +12,7 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Message Hub 在 Bluemix 公用與 Bluemix 專用環境之間的差異
+# Message Hub 在 {{site.data.keyword.Bluemix_notm}} 公用與專用環境之間的差異
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}} 是一種以雲端為基礎的開放標準平台，用於建置、執行及管理應用程式。{{site.data.keyword.Bluemix_notm}} 提供公用及專用的部署模型。{{site.data.keyword.messagehub}} 可以在這兩個環境中使用。
@@ -37,7 +37,7 @@ lastupdated: "2017-02-08"
 在 {{site.data.keyword.messagehub}} 的專用實例中，您會針對服務而付費，而不是針對使用的量付費。您可以在整個環境中有最多 75
 個分割區，包括所有組織及空間。每個分割區的上限為 10 GB，以確保叢集不會用盡空間。
 
-在「{{site.data.keyword.Bluemix_notm}} 專用」中不支援用 Kibana 和 Grafana 儀表板來監視服務。
+專用的 {{site.data.keyword.messagehub}} 只能搭配「{{site.data.keyword.Bluemix_notm}} 專用」部署，但如果您使用其他專用環境，可以使用我們的聯合版本的公用服務。在「{{site.data.keyword.Bluemix_notm}} 專用」中不支援用 Kibana 和 Grafana 儀表板來監視服務。
 
 如需相關資訊，請參閱 [{{site.data.keyword.Bluemix_notm}} 專用 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window}。
 

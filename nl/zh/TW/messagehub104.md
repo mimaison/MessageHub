@@ -55,6 +55,9 @@ Liberty for Java 範例會實作一個簡單的應用程式，部署至 Liberty 
 
 3. 將此行新增到您的消費者和生產者內容：<code>sasl.mechanism=PLAIN</code>
 
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
 
 ## 使用 sasl.jaas.config 內容
 {: #sasl_prop notoc}
@@ -72,6 +75,12 @@ Liberty for Java 範例會實作一個簡單的應用程式，部署至 Liberty 
 如果您使用 <code>sasl.jaas.config</code>，在相同 JVM 中執行的用戶端可以使用不同的認證。如需相關資訊，請參閱
 [Configuring Kafka clients ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window}
 
+若為較早的 Kafka 用戶端，您必須使用 JAAS 配置檔來指定認證。此機制較不方便，因此我們建議使用改用 <code>sasl.jaas.config</code> 內容。
+
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
+
 ## 主題管理用的 API
 {: #topic_admin notoc}
 
@@ -86,28 +95,6 @@ Liberty for Java 範例會實作一個簡單的應用程式，部署至 Liberty 
 <p>**附註：**如果清理原則是僅 <code>compact</code>，我們會自動新增 <code>delete</code> 但停用根據時間刪除。主題中的訊息在刪除之前最多可壓縮到 1 GB。</p>
 </dd>
 </dl>
-
-## Kafka Streams 的支援
-{: #kafka_streams notoc}
-
-從 Streams 程式庫 0.10.2.0 開始，主題 API 現在可搭配 {{site.data.keyword.messagehub}} 運作，不需要設定。請使用 <code>sasl.jaas.config</code> 或 JAAS 檔案指定 SASL 認證，並將 <code>replication.factor</code> 設為 3。
-
-例如：
-
-<pre>
-<code>
-    props.put(StreamsConfig.REPLICATION_FACTOR_CONFIG, "3");
-    props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-    props.put("security.protocol","SASL_SSL");
-    props.put("sasl.mechanism","PLAIN");
-    props.put("ssl.protocol","TLSv1.2");
-    props.put("ssl.enabled.protocols","TLSv1.2");
-    props.put("sasl.jaas.config","org.apache.kafka.common.security.plain.PlainLoginModule required username=\"USERNAME\" password=\"PASSWORD\";");
-</code>
-</pre>
-{:codeblock}
-
-其中 BOOTSTRAP_SERVERS、USERNAME 及 PASSWORD 是來自 {{site.data.keyword.Bluemix_notm}} 中 {{site.data.keyword.messagehub}} **服務認證**標籤的值。
 
 <!--
 new topic that includes content from existing topics about samples and migration

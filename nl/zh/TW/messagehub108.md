@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-16"
+lastupdated: "2017-10-17"
 
 ---
 
@@ -17,11 +17,27 @@ lastupdated: "2017-08-16"
 
 {{site.data.keyword.IBM}} {{site.data.keyword.messagehub}} 服務常見問題的回答。
 
-## Kafka offsets.retention.minutes 的預設值為何？
-{: #offsets notoc}
-預設值是 7 天。 
+<!--17/10/17 - Karen: same info duplicated at messagehub104 -->
+## 如何使用 Kafka API 建立及刪除主題？
+{: #topic_admin notoc}
 
-偏移保留屬於系統層面，因此您不能在個別主題層次設定。所有消費者群組只會得到 7 天的儲存偏移，即使它們的主題已增加到最長 30 天的日誌保留。 
+如果您使用 Kafka 用戶端 0.11 或更新版本，或 Kafka Streams 0.10.2.0 或更新版本，可以使用 API 來建立及刪除主題。我們已對您建立主題時接受的設定做了一些限制。目前，您只能修改下列設定：
+
+<dl>
+<dt>cleanup.policy</dt>
+<dd>設為 <code>delete</code>（預設值）、<code>compact</code> 或 <code>delete,compact</code></dd>
+<dt>retention.ms</dt>
+<dd>預設保留期間是 24 小時。最短 1 小時，最長 30 天。請以小時的倍數來指定此值。
+
+<p>**附註：**如果清理原則是僅 <code>compact</code>，我們會自動新增 <code>delete</code> 但停用根據時間刪除。主題中的訊息在刪除之前最多可壓縮到 1 GB。</p>
+</dd>
+</dl>
+
+## {{site.data.keyword.messagehub}} 為消費者偏移主題所設定的日誌保留時間範圍有多長？
+{: #offsets notoc}
+{{site.data.keyword.messagehub}} 會保留消費者偏移 7 天。這對應於 Kafka 配置 offsets.retention.minutes。 
+
+偏移保留屬於系統層面，因此您不能在個別主題層次設定。所有消費者群組只會得到 7 天的儲存偏移，即使是使用已增加到最長 30 天日誌保留的主題。 
 
 ## {{site.data.keyword.messagehub}} 的可用性行為為何？
 {: #availability notoc}

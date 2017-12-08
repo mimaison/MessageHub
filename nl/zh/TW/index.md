@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,19 +15,17 @@ lastupdated: "2017-03-02"
 # 開始使用 Message Hub
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} 是一個可擴充的分散式高傳輸量訊息匯流排，用來統一內部部署與外部部署的雲端技術。
+{{site.data.keyword.messagehub_full}} 是一個可擴充的分散式高傳輸量傳訊服務，它讓應用程式及服務能輕鬆而可靠地進行通訊。
 {:shortdesc}
 
 使用 {{site.data.keyword.messagehub}}，您可以完成下列作業：
 
-* 使用開放通訊協定將微服務串連在一起
+* 將工作卸載至後端工作者處理程序
 * 連接串流資料與分析，以實現強大的見解
 * 將事件資料提供給多個應用程式，即時回應
+* 將資料傳送到另一個服務
 
-例如，您可以使用 {{site.data.keyword.messagehub}} 來發佈庫存變更、建立即時資料的集中化匯流排，或是讓應用程式能將工作卸載至後端工作者處理程序。
-
-若要開始使用 {{site.data.keyword.messagehub}} 和開始傳送及接收訊息，請使用 Java™ 範例。範例顯示生產者如何使用主題將訊息傳送到消費者。相同的範例程式用來使用訊息，以及產生訊息。
+若要開始使用 {{site.data.keyword.messagehub}} 和開始傳送及接收訊息，您可以使用 Java™ 範例。範例顯示生產者如何使用主題將訊息傳送到消費者。相同的範例程式用來使用訊息，以及產生訊息。
 
 ![Java 範例總覽圖](getting_started_sample.gif "顯示訊息流程之 Java 範例的總覽圖。")
 
