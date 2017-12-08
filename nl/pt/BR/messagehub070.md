@@ -1,8 +1,6 @@
 ---
 
-copyright:
-  years: 2015, 2017
-lastupdated: "2017-02-09"
+copyright: years: 2015, 2017 lastupdated: "2017-09-26"
 
 ---
 
@@ -22,6 +20,7 @@ lastupdated: "2017-02-09"
 {:shortdesc}
 
 Para usar a API do {{site.data.keyword.mql}}, deve-se criar um tópico do Kafka chamado
-"MQLight". No entanto, os tópicos usados na API do {{site.data.keyword.mql}} são criados automaticamente conforme eles são usados.
+"MQLight". Os tópicos usados na API {{site.data.keyword.mql}} são criados automaticamente conforme são usados, mas todas as mensagens estão realmente no único tópico "MQLight" do Kafka.
 
-Para obter um vídeo que demonstra como é possível usar o painel do {{site.data.keyword.messagehub}} no console do Bluemix, consulte [{{site.data.keyword.IBM_notm}} {{site.data.keyword.messagehub}} - Interface com o usuário ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.youtube.com/watch?v=lZulxqv_rHc){:new_window}.
+Para um vídeo que demonstra como é possível usar o painel do {{site.data.keyword.messagehub}}
+no console do {{site.data.keyword.Bluemix_notm}}, veja[{{site.data.keyword.IBM_notm}} {{site.data.keyword.messagehub}} - User Interface ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.youtube.com/watch?v=lZulxqv_rHc){:new_window}.

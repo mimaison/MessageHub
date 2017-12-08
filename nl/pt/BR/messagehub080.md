@@ -44,5 +44,3 @@ Também é necessário observar as seguintes informações:
 ser diferentes de outros servidores que suportam a API do {{site.data.keyword.mql}}. Para obter mais
 informações, consulte [Limites máximos](/docs/services/MessageHub/messagehub083.html).
 * O JMS não é suportado.
-* É possível ter apenas uma instância do {{site.data.keyword.messagehub}}
-para cada espaço do {{site.data.keyword.Bluemix_notm}}.

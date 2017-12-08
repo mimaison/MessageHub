@@ -31,7 +31,8 @@ usando a API do {{site.data.keyword.mql}}.
     <th> Valor </th>
   </tr>
   <tr>
-    <td> Opcional (não usado pela API) 	<p></p>
+    <td> Opcional (não usado pela API)
+	<p></p>
 	</td>
     <td>**1 byte**
 	<p>		     Destaque da API do MQ Light, que é sempre 0xFA.</p>

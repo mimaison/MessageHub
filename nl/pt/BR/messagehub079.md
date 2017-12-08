@@ -19,10 +19,11 @@ Para conectar um aplicativo ao serviço, o aplicativo deve usar os detalhes de <
 <code>password</code> e <code>mqlight_lookup_url</code> da
 [variável de ambiente VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html). Use a
 seguinte orientação para sua linguagem escolhida:
+
 **Para Java**
 
 Se você especificar 'null' como o parâmetro endpointService da chamada create(), isso
-instruirá o cliente a ler os detalhes de <code>user</code>, <code>password</code> e 
+instruirá o cliente a ler os detalhes de <code>user</code>, <code>password</code> e
 <code>mqlight_lookup_url</code> no VCAP_SERVICES:
 
 <pre>

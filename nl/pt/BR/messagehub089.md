@@ -16,8 +16,7 @@ lastupdated: "2017-03-10"
 
 A ponte do {{site.data.keyword.objectstorageshort}} permite arquivar dados de tópicos
 Kafka no {{site.data.keyword.messagehub}} em uma instância do serviço do {{site.data.keyword.Bluemix_short}} [{{site.data.keyword.objectstorageshort}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/ObjectStorage/index.html){:new_window}. A ponte consome lotes de mensagens do Kafka e faz upload dos
-dados da mensagem como objetos para um contêiner no serviço do {{site.data.keyword.objectstorageshort}}.
-Ao configurar a ponte do {{site.data.keyword.objectstorageshort}}, é possível controlar como os
+dados da mensagem como objetos para um contêiner no serviço do {{site.data.keyword.objectstorageshort}}. Ao configurar a ponte do {{site.data.keyword.objectstorageshort}}, é possível controlar como os
 dados são transferidos por upload como objetos para o {{site.data.keyword.objectstorageshort}}. Por
 exemplo, as propriedades que podem ser configuradas são as seguintes:
 
@@ -39,8 +38,7 @@ gerenciamento de deslocamento do consumidor Kafka para transferir os dados de fo
 perda, mas com uma chance pequena de duplicação.
 
 É possível controlar quantos registros são lidos no Kafka antes que os dados sejam gravados na
-instância de serviço do {{site.data.keyword.objectstorageshort}} usando as propriedades a seguir. 
-Especifique essas propriedades ao criar ou atualizar uma ponte:
+instância de serviço do {{site.data.keyword.objectstorageshort}} usando as propriedades a seguir. Especifique essas propriedades ao criar ou atualizar uma ponte:
 <dl><dt>`"uploadDurationThresholdSeconds"`</dt> 
 <dd>Define um período de tempo em segundos após o qual os dados acumulados no Kafka são transferidos por upload
 para o serviço do {{site.data.keyword.objectstorageshort}}.</dd>
@@ -56,8 +54,7 @@ não garante transferência dos dados para o serviço do {{site.data.keyword.obj
 exatamente no ponto em que um desses limites é atingido. Portanto, os dados transferidos podem chegar mais
 tarde ou ser maiores que os valores especificados por essas propriedades.
 
-A ponte do {{site.data.keyword.objectstorageshort}} concatena mensagens usando caracteres de nova linha como separadores à medida que grava os dados no {{site.data.keyword.objectstorageshort}}. 
-Esses separadores tornam a ponte inadequada para mensagens que contêm caracteres de nova linha integrados e
+A ponte do {{site.data.keyword.objectstorageshort}} concatena mensagens usando caracteres de nova linha como separadores à medida que grava os dados no {{site.data.keyword.objectstorageshort}}. Esses separadores tornam a ponte inadequada para mensagens que contêm caracteres de nova linha integrados e
 para dados da mensagem binários.
 
 ## Como a ponte do {{site.data.keyword.objectstorageshort}} particiona dados em objetos
@@ -172,9 +169,9 @@ ao campo de data do ISO 8601 em cada mensagem do Kafka. Neste exemplo, o campo `
 deve conter um valor de data de ISO 8601 válido. Em seguida, as mensagens são particionadas de acordo com
 suas datas.
 	
-	Uma ponte configurada como este exemplo gera objetos com nomes especificados como segue: `<object_a>
-` contém mensagens JSON com campos `"timestamp"` com uma data de 07/12/2016 e
-`<object_b>` e `<object_c>` contêm mensagens JSON com campos `"timestamp"` com uma data de
+	Uma ponte configurada como este exemplo gera objetos com nomes especificados como segue:
+ `<object_a>` contém mensagens JSON com campos `"timestamp"` com
+ uma data de 07/12/2016 e `<object_b>` e `<object_c>` contêm mensagens JSON com campos `"timestamp"` com uma data de
  08/12/2016.
 
     <pre class="pre"><code>

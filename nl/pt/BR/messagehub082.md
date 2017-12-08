@@ -23,8 +23,7 @@ amostras.
 Na realidade, o aplicativo de amostra consiste em dois aplicativos simples: um frontend da web
 que envia mensagens para um backend e um backend que processa as mensagens, altera as palavras para letras
 maiúsculas e, em seguida, retorna as mensagens para o frontend. Esta amostra exibe como é fácil estabelecer
-comunicação entre os aplicativos usando a API do {{site.data.keyword.mql}}.
-Também é possível usar a API do {{site.data.keyword.mql}} para executar a transferência do
+comunicação entre os aplicativos usando a API do {{site.data.keyword.mql}}. Também é possível usar a API do {{site.data.keyword.mql}} para executar a transferência do
 trabalhador; um recurso-chave necessário para a construção de aplicativos escaláveis, fracamente acoplados e
 distribuídos.
 

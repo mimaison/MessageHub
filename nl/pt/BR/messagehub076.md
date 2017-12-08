@@ -22,6 +22,5 @@ Os aplicativos trocam mensagens usando destinos criados dinamicamente, os quais 
 <code>‘/sports/#’</code>) e tenha controles simples para garantia de entrega e validação de mensagem.
 Isso permite implementar cenários como a transferência do trabalhador, a notificação de eventos e o processamento em lote diretamente.
 
-Bem como enviar mensagens entre outros aplicativos usando a API {{site.data.keyword.mql}}, também é possível trocar mensagens com aplicativos que usam as APIs Kafka REST ou Kafka. 
-Como alternativa, também é possível usar aplicativos no local com o {{site.data.keyword.IBM}} MQ.
+Bem como enviar mensagens entre outros aplicativos usando a API {{site.data.keyword.mql}}, também é possível trocar mensagens com aplicativos que usam as APIs Kafka REST ou Kafka. Como alternativa, também é possível usar aplicativos no local com o {{site.data.keyword.IBM}} MQ.
 

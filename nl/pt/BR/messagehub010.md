@@ -1,8 +1,6 @@
 ---
 
-copyright:
-  years: 2015, 2017
-lastupdated: "2017-02-07"
+copyright: years: 2015, 2017 lastupdated: "2017-09-26"
 
 ---
 
@@ -30,7 +28,6 @@ mensagens entre aplicativos de recebimento, resultando em um comportamento semel
 
 É possível usar o {{site.data.keyword.messagehub}} para concluir as tarefas a seguir:
 
-* Ligar microsserviços.
 * Transferir trabalho para processos do trabalhador de backend.
 * Conectar dados em fluxo à análise para realizar insights poderosos.
 * Publicar dados do evento em múltiplos aplicativos para reagir em tempo real.

@@ -12,11 +12,12 @@ lastupdated: "2017-05-11"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Como migrar o cliente Kafka da versão 0.9.x para a 0.10.x
+# Como migrar o cliente Kafka de 0.9.X para 0.10.X ou 0.11.X
 {: #kafka_migrate}
 
 
-Se você estiver usando os clientes Java, agora poderá usar os clientes Kafka 0.10.x disponíveis publicamente. É altamente recomendado mudar da versão 0.9.x para a versão 0.10.x mais recente (atualmente 0.10.2.1). Execute as seguintes etapas:
+Se você estiver usando os clientes Java, poderá usar os clientes Kafka 0.10.X ou 0.11.X publicamente disponíveis. É altamente recomendado mover da versão 0.9.X para a versão 0.10.X ou 0.11.X mais recente
+(todas as versões mais recentes são suportadas). Execute as seguintes etapas:
 
 1. Exclua o módulo jar de login do {{site.data.keyword.messagehub}}.
 2. Mude seu arquivo <code>jaas.conf</code> para o seguinte:

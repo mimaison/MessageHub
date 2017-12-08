@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,13 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## Número de instâncias do {{site.data.keyword.messagehub}}
-                para cada espaço do {{site.data.keyword.Bluemix_notm}}
-{: #instances_space notoc}
-
-É possível ter apenas uma instância do {{site.data.keyword.messagehub}}
-para cada espaço do {{site.data.keyword.Bluemix_notm}}.
-
 ##Tópicos e partições
 {: #topics_partitions notoc}
 
@@ -33,7 +26,7 @@ para cada espaço do {{site.data.keyword.Bluemix_notm}}.
                     mais partições, deve-se usar um novo espaço do {{site.data.keyword.Bluemix_notm}}.
 
 ## Retenção de mensagem
-{: #message_retention notoc}
+{: #message_retention}
 
 Por padrão, as mensagens são retidas no Kafka por até 24 horas e cada partição é limitada a 1 GB. Se um valor máximo de 1 GB for atingido, as mensagens mais antigas serão descartadas para permanecerem
 no limite.
@@ -51,8 +44,7 @@ de tópicos ou da rápida exclusão e recriação de tópicos.
 ## API REST Kafka
 {: #trouble_rest notoc}
 
-*  Somente o formato integrado binário é suportado para solicitações e respostas. O formato integrado Avro
-                não é suportado.
+*  Somente o formato integrado binário é suportado para solicitações e respostas. Os formatos integrados do Avro e JSON não são suportados.
 *  Solicitações simultâneas não são suportadas para uma instância do consumidor.
    Solicitações de leitura, confirmação
                     ou exclusão correspondentes a uma instância do consumidor devem ser enviadas somente após uma
@@ -84,5 +76,5 @@ do Kafka. Se este for o caso, a API de REST retornará o JSON a seguir:
 ## API de consumidor de alto nível Kafka
 {: #kafka_consumer notoc}
 
-Não é possível usar Apache Kafka 0.8.2 simples ou a API de consumidor de alto nível com o {{site.data.keyword.messagehub}}. Como alternativa, use a nova API
-do consumidor Kafka 0.9.
+Não é possível usar Apache Kafka 0.8.2 simples ou a API de consumidor de alto nível com o {{site.data.keyword.messagehub}}. Em vez disso, é possível usar a API de consumidor Kafka
+mais antiga suportada, que é a API do consumidor 0.9.

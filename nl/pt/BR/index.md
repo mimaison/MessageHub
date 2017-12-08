@@ -1,8 +1,6 @@
 ---
 
-copyright:
-  years: 2015, 2017
-lastupdated: "2017-03-02"
+copyright: years: 2015, 2017 lastupdated: "2017-09-26"
 
 ---
 
@@ -15,23 +13,20 @@ lastupdated: "2017-03-02"
 # Introdução ao Message Hub
 {: #messagehub}
 
-
-O {{site.data.keyword.messagehub_full}} é um barramento de mensagem escalável, distribuído e de
-alto rendimento para unificar suas tecnologias de nuvem no local e externamente.
+O {{site.data.keyword.messagehub_full}} é um serviço de sistema de mensagens escalável,
+distribuído e de alto rendimento que permite que aplicativos e serviços se comuniquem com facilidade e
+confiabilidade.
 {:shortdesc}
 
 Usando o {{site.data.keyword.messagehub}}, é possível concluir as seguintes tarefas:
 
-* Ligar microsserviços usando protocolos abertos
+* Transferir trabalho para processos do trabalhador de backend
 * Conectar dados em fluxo para análise para realizar insights poderosos
 * Alimentar dados de eventos para vários aplicativos para reagir em tempo real
+* Transferir dados para outro serviço, tal como armazenamento de longo prazo
 
-Por exemplo, é possível usar o {{site.data.keyword.messagehub}} para publicar mudanças no
-inventário, criar um barramento centralizado para dados em tempo real ou permitir que aplicativos
-transfiram o trabalho para processos do trabalhador de backend.
-
-Para iniciar com o {{site.data.keyword.messagehub}} e começar a enviar e a receber mensagens, use a
-amostra Java™. A amostra exibe como um produtor envia mensagens para um consumidor usando um tópico. O
+Para começar a usar o {{site.data.keyword.messagehub}} e iniciar o envio e recebimento
+de mensagens, é possível usar a amostra Java™. A amostra exibe como um produtor envia mensagens para um consumidor usando um tópico. O
 mesmo programa de amostra é usado para consumir e produzir mensagens.
 
 ![Diagrama de visão geral de amostra do Java](getting_started_sample.gif "Diagrama de visão geral da amostra do Java exibindo ofluxo de mensagens.")
@@ -93,8 +88,7 @@ comandos:
     {: codeblock}
     
     A amostra usa um tópico denominado `kafka-java-console-sample-topic`. Se o tópico
-ainda não existir, a amostra o criará usando a API de administração do {{site.data.keyword.messagehub}}.
-Para enviar e receber mensagens, a amostra usa a API do Apache Kafka Java.
+ainda não existir, a amostra o criará usando a API de administração do {{site.data.keyword.messagehub}}. Para enviar e receber mensagens, a amostra usa a API do Apache Kafka Java.
 
     Para localizar os valores para *kafka_brokers_sasl*, *kafka_admin_url*
 e *api_key*, acesse a instância do {{site.data.keyword.messagehub}} no

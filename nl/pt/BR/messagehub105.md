@@ -16,10 +16,10 @@ lastupdated: "2017-03-10"
 {: #mq_bridge}
 
 A ponte do MQ permite transferir dados da mensagem de uma fila do
-{{site.data.keyword.IBM_notm}} MQ para um tópico do {{site.data.keyword.messagehub}} Kafka.
-A ponte do MQ permite executar de modo eficiente cargas de trabalho de estilo de nuvem (por exemplo, análise de
+{{site.data.keyword.IBM_notm}} MQ para um tópico do {{site.data.keyword.messagehub}} Kafka. A ponte do MQ permite executar de modo eficiente cargas de trabalho de estilo de nuvem (por exemplo, análise de
 dados) com relação a dados de mensagem do {{site.data.keyword.IBM_notm}} MQ gerados na
-sua empresa. {:shortdesc}
+sua empresa.
+ {:shortdesc}
 
 A ponte do MQ se conecta a um gerenciador de filas do {{site.data.keyword.IBM_notm}}
 MQ como um cliente do MQ e consome dados de mensagem do MQ em uma fila do MQ. A ponte converte cada mensagem
@@ -53,7 +53,7 @@ ponte. Por exemplo:
 
 * Reinício do gerenciador de filas do MQ
 * Interrupção da rede entre o gerenciador de filas do MQ e a ponte
-* Rebalanceamento da designação de partição do tópico Kafka 
+* Rebalanceamento da designação de partição do tópico Kafka
 * Interrupção da rede entre a ponte e o Kafka
 
 Para assegurar que a ponte do MQ possa transferir mensagens de forma confiável do MQ, a
