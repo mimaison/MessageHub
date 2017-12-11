@@ -12,7 +12,7 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# 在 Bluemix Public 和 Bluemix Dedicated 环境中 Message Hub 的差异
+# {{site.data.keyword.Bluemix_notm}} Public 和 Dedicated 环境中 Message Hub 的差异
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}} 是一种基于云的开放标准平台，用于构建、运行和管理应用程序。{{site.data.keyword.Bluemix_notm}} 提供公共和专用部署模型。{{site.data.keyword.messagehub}} 在这两种环境中均可用。
@@ -34,6 +34,7 @@ lastupdated: "2017-02-08"
 
 在 {{site.data.keyword.messagehub}} 的专用实例中，您是按服务付费，而不是按服务使用量付费。您在整个环境（包括所有组织和空间）中最多可以拥有 75 个分区。每个分区的上限为 10 GB，以确保集群不会耗尽空间。
 
+Dedicated 中的 {{site.data.keyword.messagehub}} 仅可以使用 {{site.data.keyword.Bluemix_notm}} Dedicated 来部署，但是如果您使用其他 Dedicated 环境，那么可以使用公共服务的联合版本。
 {{site.data.keyword.Bluemix_notm}} Dedicated 中不支持用于监视服务的 Kibana 和 Grafana 仪表板。
 
 有关更多信息，请参阅 [{{site.data.keyword.Bluemix_notm}} Dedicated ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window}。

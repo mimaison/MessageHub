@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-08-18"
 # 向 {{site.data.keyword.messagehub}} 团队报告问题
 {: #report_problem}
 
-如果使用 {{site.data.keyword.messagehub}} 时遇到问题，请首先检查 [{{site.data.keyword.Bluemix_notm}} 状态页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://status.ng.bluemix.net/){:new_window}。 
+如果使用 {{site.data.keyword.messagehub}} 时遇到问题，请首先检查 [{{site.data.keyword.Bluemix_notm}} 状态页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/status){:new_window}。 
 
 如果希望获得 {{site.data.keyword.messagehub}} 团队的帮助，请尽可能多地收集以下信息：
 {:shortdesc}
@@ -34,9 +34,7 @@ lastupdated: "2017-08-18"
 10. 问题对服务有什么影响？
 
 
-
-
-
+您可以通过[提交支持请求 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/docs/support/index.html#open-ticket)，在支持凭单中向 IBM 提供所收集的信息。
 
 
 

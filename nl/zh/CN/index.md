@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,19 +15,17 @@ lastupdated: "2017-03-02"
 # Message Hub 入门
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} 是一种可扩展、分布式、高吞吐量的消息传递总线，用于将内部部署和外部部署的云技术合并在一起。
+{{site.data.keyword.messagehub_full}} 是一种可扩展、分布式、高吞吐量的消息传递服务，支持应用程序和服务轻松、可靠地进行通信。
 {:shortdesc}
 
 使用 {{site.data.keyword.messagehub}}，可以完成以下任务：
 
-* 使用开放协议将微服务连线在一起
+* 将工作分流到后端工作程序进程
 * 将流数据连接到分析以获得深刻的见解
 * 将事件数据注入到多个应用程序以实时作出反应
+* 将数据传输到其他服务中，如长期存储
 
-例如，可以使用 {{site.data.keyword.messagehub}} 发布库存更改，创建集中式总线以用于实时数据，或支持应用程序将工作分流到后端工作程序进程。
-
-要开始使用 {{site.data.keyword.messagehub}} 并开始发送和接收消息，请使用 Java™ 样本。样本显示生产者如何使用主题将消息发送给使用者。同一个样本程序用于使用消息和生成消息。
+要开始使用 {{site.data.keyword.messagehub}} 并开始发送和接收消息，可以使用 Java™ 样本。样本显示生产者如何使用主题将消息发送给使用者。同一个样本程序用于使用消息和生成消息。
 
 ![Java 样本概览图](getting_started_sample.gif "显示消息流的 Java 样本概览图。")
 

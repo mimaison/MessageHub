@@ -32,4 +32,3 @@ lastupdated: "2017-02-01"
 
 * 消息限制与 {{site.data.keyword.messagehub}} 一致，但可能与支持 {{site.data.keyword.mql}} API 的其他服务器不同。有关更多信息，请参阅[最大限制](/docs/services/MessageHub/messagehub083.html)。
 * 不支持 JMS。
-* 每个 {{site.data.keyword.Bluemix_notm}} 空间只能有一个 {{site.data.keyword.messagehub}} 实例。

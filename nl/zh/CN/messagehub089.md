@@ -126,7 +126,10 @@ lastupdated: "2017-03-10"
 
 	按 ISO 8601 日期分区需要 Kafka 消息具有有效的 JSON 格式。用于配置网桥的 JSON 格式的 `"propertyName"` 值必须对应于每条 Kafka 消息中的 ISO 8601 日期字段。在此示例中，`"timestamp"` 字段必须包含有效的 ISO 8601 日期值。然后，将根据消息的日期来对消息分区。
 	
-	类似此示例进行配置的网桥会生成指定名称的对象，如下所示：`<object_a>` 包含 JSON 消息以及日期为 2016-12-07 的 `"timestamp"` 字段，`<object_b>` 和 `<object_c>` 都包含 JSON 消息以及日期为 2016-12-08 的 `"timestamp"` 字段。
+	类似此示例进行配置的网桥会生成指定名称的对象，如下所示：
+	`<object_a>` 包含 JSON 消息以及日期为 2016-12-07 的 `"timestamp"` 字段，
+	`<object_b>` 和 `<object_c>` 都包含 JSON 消息以及日期为
+	2016-12-08 的 `"timestamp"` 字段。
 
     <pre class="pre"><code>
         ```
