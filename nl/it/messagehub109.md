@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-08-18"
 # Segnalazione di un problema al team di {{site.data.keyword.messagehub}}
 {: #report_problem}
 
-Se riscontri un problema con {{site.data.keyword.messagehub}}, per prima cosa controlla la [pagina sugli stati di {{site.data.keyword.Bluemix_notm}}  ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://status.ng.bluemix.net/){:new_window}. 
+Se riscontri un problema con {{site.data.keyword.messagehub}}, per prima cosa controlla la [pagina sugli stati di {{site.data.keyword.Bluemix_notm}}  ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/status){:new_window}. 
 
 Se vuoi aiuto da parte del team di {{site.data.keyword.messagehub}}, raccogli il maggior numero possibile delle seguenti informazioni:
 {:shortdesc}
@@ -26,7 +26,7 @@ Se vuoi aiuto da parte del team di {{site.data.keyword.messagehub}}, raccogli il
 2. In quale interfaccia riscontri i problemi? REST, Kafka, AMQP o bridge?
 3. Quando si è verificato il primo errore (nello specifico ora, data e fuso orario)? Per quanto tempo è rimasta in esecuzione l'applicazione prima dell'errore?
 4. Si sta verificando ancora l'errore? Puoi replicarlo?
-5. Qual è l'ID istanza del servizio {{site.data.keyword.messagehub}} che stai utilizzando?
+5. Qual è l'ID istanza del servizio {{site.data.keyword.messagehub}} che stai utilizzando? 
 Puoi trovare questo ID nel campo "instance_id" nel JSON VCAP_SERVICES del servizio.
 6. Quale client Kafka o REST utilizza la tua applicazione? Quali sono i dettagli della versione?
 7. Quali sono i dettagli della configurazione del client?
@@ -35,9 +35,7 @@ Puoi trovare questo ID nel campo "instance_id" nel JSON VCAP_SERVICES del serviz
 10. Qual è l'impatto del problema sul tuo servizio?
 
 
-
-
-
+Puoi fornire le informazioni che hai raccolto da IBM in un ticket di supporto [inviando una richiesta di supporto ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://console.bluemix.net/docs/support/index.html#open-ticket).
 
 
 

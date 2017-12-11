@@ -28,17 +28,14 @@ In caso negativo, invia la tua domanda; risponderà un membro del team di svilup
 ## Link utili
 {: #troubleshooting_links notoc}
 
-*  [{{site.data.keyword.IBM}} {{site.data.keyword.messagehub}} su developerWorks&reg; ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/messaging/message-hub/){: new_window}
-*  [Blog di {{site.data.keyword.IBM_notm}} Messaging ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/messaging/blogs/){: new_window}
-*  [Versione di prova gratuita {{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_short}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://apps.admin.ibmcloud.com/manage/trial/bluemix.html){: new_window}
+*  [Versione di prova gratuita {{site.data.keyword.Bluemix_short}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://apps.admin.ibmcloud.com/manage/trial/bluemix.html){: new_window}
 *  [Esempio di {{site.data.keyword.messagehub}} Java Kafka ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample){: new_window}
 *  [Creazione di applicazioni web con {{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} e distribuzione della tua
    applicazione con Cloud Foundry ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ng.bluemix.net/docs/starters/install_cli.html){: new_window}
 *  [Documentazione di Apache Kafka ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://kafka.apache.org/documentation.html){: new_window}
 *  [Client Apache Kafka 0.10.2.1 ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://kafka.apache.org/0102/javadoc/index.html){: new_window}
-*  [Un proxy REST open source completo per Kafka. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.confluent.io/blog/a-comprehensive-open-source-rest-proxy-for-kafka/){: new_window}
+*  [Un proxy REST open source completo per Kafka. ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.confluent.io/blog/a-comprehensive-open-source-rest-proxy-for-kafka/){: new_window} 
 	Questo blog offre una buona introduzione ai punti di forza e a quelli deboli dell'API REST Kafka.
-*  [Sito MQ Light developerWorks ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/messaging/mq-light/){: new_window}
-*  [Listino prezzi di {{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ng.bluemix.net/#/pricing){: new_window}
-*  [Prerequisiti di {{site.data.keyword.IBM_notm}} {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
+*  [Listino prezzi di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ng.bluemix.net/#/pricing){: new_window}
+*  [Prerequisiti di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/bluemix/support/#prereqs/){: new_window}
 

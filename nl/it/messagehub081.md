@@ -25,8 +25,8 @@ l'API {{site.data.keyword.mql}}.
 <table border='1'>
 <caption>Tabella 1. Formato dei messaggi Kafka</caption>
   <tr>
-    <th> Chiave</th>
-    <th> Valore</th>
+    <th> Chiave </th>
+    <th> Valore </th>
   </tr>
   <tr>
     <td> Facoltativo (non utilizzato dall'API)

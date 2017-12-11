@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,12 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## Numero di istanze {{site.data.keyword.messagehub}}
-                per ciascuno spazio {{site.data.keyword.Bluemix_notm}}
-{: #instances_space notoc}
-
-Puoi avere solo una singola istanza {{site.data.keyword.messagehub}} per ciascuno spazio {{site.data.keyword.Bluemix_notm}}.
-
 ##Argomenti e partizioni
 {: #topics_partitions notoc}
 
@@ -32,7 +26,7 @@ Puoi avere solo una singola istanza {{site.data.keyword.messagehub}} per ciascun
                     più partizioni, devi utilizzare un nuovo spazio {{site.data.keyword.Bluemix_notm}}.
 
 ## Conservazione dei messaggi
-{: #message_retention notoc}
+{: #message_retention}
 
 Per impostazione predefinita, i messaggi vengono conservati in Kafka per un massimo di 24 ore e
 ciascuna partizione ha un limite massimo di 1 GB. Se viene raggiunto il limite massimo di 1 GB, i messaggi vengono eliminati per restare entro il limite.
@@ -53,8 +47,7 @@ di argomenti o sull'eliminazione e ricreazione rapida di argomenti.
 ## API REST Kafka
 {: #trouble_rest notoc}
 
-*  Solo il formato integrato binario è supportato per le richieste e le risposte. Il formato integrato Avro
-                non è supportato.
+*  Solo il formato integrato binario è supportato per le richieste e le risposte. I formati incorporati Avro e JSON non sono supportati.
 *  Le richieste simultanee non sono supportate per un'istanza consumatore.
    Le richieste di lettura, commit o
                     eliminazione corrispondenti a un'istanza consumatore devono essere inviate solo dopo
@@ -89,4 +82,5 @@ l'API REST restituisce il seguente JSON:
 ## API consumatore di alto livello Kafka
 {: #kafka_consumer notoc}
 
-Non è possibile utilizzare l'API semplice o consumatore di alto livello Apache Kafka 0.8.2 con {{site.data.keyword.messagehub}}. Utilizza invece la nuova API consumatore Kafka 0.9.
+Non è possibile utilizzare l'API semplice o consumatore di alto livello Apache Kafka 0.8.2 con {{site.data.keyword.messagehub}}. Invece, puoi utilizzare la prima API consumatore Kafka supportata, che è la 0.9.
+API consumatore.

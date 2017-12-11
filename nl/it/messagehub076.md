@@ -16,7 +16,7 @@ lastupdated: "2016-11-22"
 {: #why_mql}
 
 L'API {{site.data.keyword.mql}} fornisce un livello di astrazione
-superiore rispetto all'API Kafka. {{site.data.keyword.mql}} consente di scrivere le applicazioni in modo rapido e portabile in un modello di messaggistica unificata che supporta i modelli di accodamento e di pubblicazione/sottoscrizione.
+superiore rispetto all'API Kafka. {{site.data.keyword.mql}} consente di scrivere le applicazioni in modo rapido e portabile in un modello di messaggistica unificata che supporta i modelli di accodamento e di pubblicazione/sottoscrizione. 
 {:shortdesc}
 
 Le applicazioni scambiano messaggi utilizzando destinazioni create in modo

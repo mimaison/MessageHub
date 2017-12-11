@@ -32,4 +32,3 @@ Nota anche le seguenti informazioni:
 
 * I limiti dei messaggi sono coerenti con {{site.data.keyword.messagehub}} ma potrebbero essere diversi da altri server che supportano l'API {{site.data.keyword.mql}}. Per ulteriori informazioni, vedi [Limiti massimi](/docs/services/MessageHub/messagehub083.html).
 * JMS non è supportato.
-* Puoi avere solo una singola istanza {{site.data.keyword.messagehub}} per ciascuno spazio {{site.data.keyword.Bluemix_notm}}.

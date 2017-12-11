@@ -82,4 +82,4 @@ inviare messaggi che non superino i 950 kilobyte utilizzando il bridge MQ.
 Se il bridge MQ rileva un messaggio troppo grande da inoltrare a Kafka, il bridge elimina il
 messaggio e scrive una voce di log nel dashboard Kibana. Valuta la possibilità di impostare l'attributo MAXMSGL
 della coda MQ da cui il bridge riceve i messaggi in modo da impedire alle applicazioni MQ di inviare alla coda
-i messaggi che non possono essere trasferiti utilizzando il bridge MQ. 
+i messaggi che non possono essere trasferiti utilizzando il bridge MQ.

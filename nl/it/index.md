@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,27 +15,23 @@ lastupdated: "2017-03-02"
 # Introduzione a Message Hub
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} è un bus di messaggi a
-velocità elevata scalabile e distribuito per unire le tue tecnologie cloud installate in loco con quelle
-installate invece altrove.
+{{site.data.keyword.messagehub_full}} è un servizio di messaggistica
+scalabile, distribuito e a velocità elevata che consente alle applicazioni e ai servizi di comunicare
+in modo semplice e affidabile.
 {:shortdesc}
 
 Utilizzando {{site.data.keyword.messagehub}}, puoi
 completare le seguenti attività:
 
-* Collegare tra di loro i microservizi utilizzando dei protocolli aperti
+* Scaricare il lavoro nei processi di lavoro di back-end 
 * Connettere i dati di flusso alle funzioni di analisi per realizzare delle potenti analisi approfondite
 * Fornire i dati di evento a più applicazioni per delle reazioni in tempo reale
-
-Ad esempio, puoi utilizzare {{site.data.keyword.messagehub}} per
-pubblicare le modifiche dell'inventario, creare un bus centralizzato per i dati in tempo reale o abilitare le applicazioni a
-scaricare il lavoro nei processi di lavoro di back-end.
+* Trasferire i dati in un altro servizio come l'archiviazione di lungo termine
 
 Per iniziare a utilizzare {{site.data.keyword.messagehub}}
-e a inviare e ricevere messaggi, usa l'esempio Java™. L'esempio mostra in che modo un produttore invia
+e a inviare e ricevere messaggi, puoi utilizzare l'esempio Java™. L'esempio mostra in che modo un produttore invia
 i messaggi a un consumatore utilizzando un argomento. Viene utilizzato lo stesso programma di esempio sia per consumare che per produrre
-i messaggi. 
+i messaggi.
 
 ![Diagramma di riepilogo dell'esempio Java](getting_started_sample.gif "Diagramma di riepilogo dell'esempio Java che mostra il flusso dei messaggi.")
 

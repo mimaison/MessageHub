@@ -24,7 +24,7 @@ La scelta tra l'utilizzo di un client Kafka o dell'API {{site.data.keyword.mql}}
 creare:
 
 * Con Kafka, utilizzi un numero ridotto di argomenti e puoi avere più partizioni per ogni argomento per una maggiore scalabilità. Puoi condividere i messaggi tra i consumatori utilizzando gruppi di consumatori, ma ogni consumatore deve essere in grado di mantenere il passo con la frequenza dei messaggi per le partizioni assegnate.
-* Con l'API {{site.data.keyword.mql}}, puoi utilizzare un numero molto maggiore di argomenti e i nomi degli argomenti sono gerarchici (ad esempio: <code>‘/sports/football’</code> e <code>‘/sports/tiddlywinks’</code>). La condivisione dei messaggi tra i consumatori è molto più semplice. 
+* Con l'API {{site.data.keyword.mql}}, puoi utilizzare un numero molto maggiore di argomenti e i nomi degli argomenti sono gerarchici (ad esempio: <code>‘/sports/football’</code> e <code>‘/sports/tiddlywinks’</code>). La condivisione dei messaggi tra i consumatori è molto più semplice.
 
 Gli argomenti nell'API {{site.data.keyword.mql}} non sono gli stessi
 argomenti presenti in Kafka. Al contrario, l'API {{site.data.keyword.mql}} utilizza

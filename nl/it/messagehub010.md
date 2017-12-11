@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-02-07"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -31,7 +31,6 @@ tra le applicazioni di ricezione, il che comporta un funzionamento simile alle c
 Puoi utilizzare {{site.data.keyword.messagehub}} per completare
 le seguenti attività:
 
-* Collegare tra di loro i microservizi.
 * Scaricare il lavoro nei processi di lavoro di back-end.
 * Connettere i dati di flusso alle funzioni di analisi per realizzare delle potenti analisi approfondite.
 * Pubblicare dati di evento in più applicazioni per delle reazioni in tempo reale.

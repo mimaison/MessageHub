@@ -23,6 +23,6 @@ L'applicazione di esempio comprende in realtà due semplici applicazioni: un fro
 backend e un backend che elabora i messaggi, converte in maiuscolo le parole e quindi restituisce i
 messaggi al frontend. Questo esempio mostra come sia facile fare in modo che le applicazioni parlino tra di loro utilizzando
 l'API {{site.data.keyword.mql}}. Inoltre, puoi utilizzare l'API {{site.data.keyword.mql}} per effettuare operazioni di scaricamento del carico di lavoro,
-una funzionalità chiave necessaria per creare applicazioni scalabili, indipendenti e distribuite. 
+una funzionalità chiave necessaria per creare applicazioni scalabili, indipendenti e distribuite.
 
 Puoi trovare il codice di esempio nel [progetto GitHub message-hub-samples ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://github.com/ibm-messaging/message-hub-samples/tree/master/mqlight){:new_window}.

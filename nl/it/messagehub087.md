@@ -34,7 +34,7 @@ Ci sono alcuni motivi per cui si potrebbe scegliere di utilizzare l'API Kafka ri
 {: #why_mql notoc}
 
 L'API {{site.data.keyword.mql}} fornisce un livello di astrazione
-superiore rispetto all'API Kafka. {{site.data.keyword.mql}} consente di scrivere le applicazioni in modo rapido e portabile in un modello di messaggistica unificata che supporta i modelli di accodamento e di pubblicazione/sottoscrizione.
+superiore rispetto all'API Kafka. {{site.data.keyword.mql}} consente di scrivere le applicazioni in modo rapido e portabile in un modello di messaggistica unificata che supporta i modelli di accodamento e di pubblicazione/sottoscrizione. 
 {:shortdesc}
 
 Le applicazioni scambiano messaggi utilizzando destinazioni create in modo
@@ -55,7 +55,7 @@ L'API REST Kafka è una pratica interfaccia che può essere utilizzata nelle
 * In alcuni casi d'uso a bassa velocità effettiva dove la latenza non è un fattore critico
 * Per eseguire il debug e la ricerca di malfunzionamenti
 
-L'API REST Kafka non è stata concepita per essere un'interfaccia ad elevata velocità effettiva e a bassa latenza. Per questi tipi di requisiti, si consiglia di utilizzare l'API Kafka per la connessione da e verso {{site.data.keyword.messagehub}}. Per ulteriori informazioni, vedi [Utilizzo di un client Kafka](/docs/services/MessageHub/messagehub050.html#kafka_client).
+L'API REST Kafka non è stata concepita per essere un'interfaccia ad elevata velocità effettiva e a bassa latenza.Per questi tipi di requisiti, si consiglia di utilizzare l'API Kafka per la connessione da e verso {{site.data.keyword.messagehub}}. Per ulteriori informazioni, vedi [Utilizzo di un client Kafka](/docs/services/MessageHub/messagehub050.html#kafka_client).
 
 
 
