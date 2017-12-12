@@ -55,6 +55,9 @@ Java 클라이언트를 사용하는 경우, 이제 공개적으로 사용 가�
 
 3. 다음 행을 이용자 및 제작자 특성에 추가하십시오. <code>sasl.mechanism=PLAIN</code>
 
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
 
 ## sasl.jaas.config 특성 사용
 {: #sasl_prop notoc}
@@ -71,6 +74,12 @@ Kafka 클라이언트를 0.10.2.1 이상에서 사용 중인 경우 JAAS 파일 
 <code>sasl.jaas.config</code>를 사용하는 경우 동일한 JVM에서 실행 중인 클라이언트가 다른 신임 정보를 사용할 수 있습니다. 자세한 정보는
 [Kafka 클라이언트 구성 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window}을 참조하십시오.
 
+초기 Kafka 클라이언트에서 신임 정보를 지정하려면 JAAS 구성 파일을 사용해야 합니다. 이 메커니즘의 편의성이 부족하므로, 대신 <code>sasl.jaas.config</code> 특성을 사용하는 것이 좋습니다. 
+
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
+
 ## 토픽 관리용 API
 {: #topic_admin notoc}
 
@@ -86,28 +95,6 @@ Kafka 클라이언트를 0.11 이상에서 사용 중이거나 Kafka 스트림�
 정리 정책이 <code>compact</code> 전용인 경우, <code>delete</code>를 자동으로 추가하지만 시간에 따라 삭제가 사용 불가능합니다. 토픽의 메시지는 삭제되기 전에 최대 1GB로 압축됩니다. </p>
 </dd>
 </dl>
-
-## Kafka 스트림에 대한 지원
-{: #kafka_streams notoc}
-
-스트림 라이브러리 0.10.2.0부터, 토픽 API는 이제 설정 없이 {{site.data.keyword.messagehub}}에 대한 작업을 수행할 수 있습니다. <code>sasl.jaas.config</code> 또는 JAAS 파일을 사용하여 SASL 신임 정보를 지정하고 <code>replication.factor</code>를 3으로 설정하십시오.
-
-예:
-
-<pre>
-<code>
-    props.put(StreamsConfig.REPLICATION_FACTOR_CONFIG, "3");
-    props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-    props.put("security.protocol","SASL_SSL");
-    props.put("sasl.mechanism","PLAIN");
-    props.put("ssl.protocol","TLSv1.2");
-    props.put("ssl.enabled.protocols","TLSv1.2");
-    props.put("sasl.jaas.config","org.apache.kafka.common.security.plain.PlainLoginModule required username=\"USERNAME\" password=\"PASSWORD\";");
-</code>
-</pre>
-{:codeblock}
-
-여기서 BOOTSTRAP_SERVERS, USERNAME 및 PASSWORD는 {{site.data.keyword.Bluemix_notm}}의 {{site.data.keyword.messagehub}} **서비스 신임 정보** 탭에 있는 값입니다.
 
 <!--
 new topic that includes content from existing topics about samples and migration

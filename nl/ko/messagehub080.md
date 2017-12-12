@@ -32,5 +32,3 @@ lastupdated: "2017-02-01"
 
 * 메시지 한계는 {{site.data.keyword.messagehub}}와 일치하지만 {{site.data.keyword.mql}} API를 지원하는 다른 서버와는 다를 수 있습니다. 자세한 정보는 [최대 한계](/docs/services/MessageHub/messagehub083.html)를 참조하십시오.
 * JMS가 지원되지 않습니다.
-* 각 {{site.data.keyword.Bluemix_notm}} 영역에 대해
-하나의 {{site.data.keyword.messagehub}} 인스턴스만 포함할 수 있습니다. 

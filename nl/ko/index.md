@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,22 +15,18 @@ lastupdated: "2017-03-02"
 # Message Hub 시작하기
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}}는 온프레미스 및 오프프레미스 클라우드 기술을 통합하는 확장 가능하고, 분산된, 처리량이 많은 메시지 버스입니다.
+{{site.data.keyword.messagehub_full}}는 애플리케이션과 서비스를 쉽고 안정적으로 통신할 수 있는 처리량이 높고 확장 가능한 분산된 메시징 서비스입니다.
 {:shortdesc}
 
 {{site.data.keyword.messagehub}}를 사용하여 다음 태스크를 완료할 수 있습니다. 
 
-* 오픈 프로토콜을 사용하여 마이크로서비스를 서로 연결
+* 백엔드 작업자 프로세스에 작업 오프로드
 * 강력한 통찰을 실현하기 위해 스트림 데이터를 분석에 연결
 * 실시간으로 대응할 수 있도록 이벤트 데이터를 여러 애플리케이션에 제공
-
-예를 들어, {{site.data.keyword.messagehub}}를 사용하여
-인벤토리 변경사항을 공개하고, 실시간 데이터를 위한 중앙 집중식 버스를 작성하거나
-백엔드 작업자 프로세스에 작업을 오프로드하도록 앱을 사용으로 설정할 수 있습니다. 
+* 데이터를 장기 스토리지와 같은 다른 서비스에 전송
 
 {{site.data.keyword.messagehub}}를 시작하여
-메시지 전송 및 수신을 시작하려면 Java™ 샘플을 사용하십시오. 샘플에서는 제작자가 토픽을 사용하여
+메시지 전송 및 수신을 시작하기 위해 Java™ 샘플을 사용할 수 있습니다. 샘플에서는 제작자가 토픽을 사용하여
 이용자에게 메시지를 보내는 방법을 보여줍니다. 메시지를 이용하고 메시지를 생성하는 데 동일한 샘플 프로그램이 사용됩니다. 
 
 ![Java 샘플 개요 다이어그램](getting_started_sample.gif "메시지의 플로우를 보여주는 Java 샘플의 개요 다이어그램.")
@@ -84,7 +80,7 @@ lastupdated: "2017-03-02"
 	<var class="keyword varname">kafka_brokers_sasl</var> <var class="keyword varname">kafka_admin_url</var> <var class="keyword varname">api_key</var> -consumer</pre>
     {: codeblock}
     
-    샘플은 `kafka-java-console-sample-topic`으로 이름 지정된 토픽을 사용합니다. 토픽이 아직 존재하지 않는 경우,
+    샘플은 `kafka-java-console-sample-topic`으로 이름 지정된 토픽을 사용합니다. 토픽이 아직 없는 경우
     샘플은 {{site.data.keyword.messagehub}} 관리 API를 사용하여 토픽을 작성합니다. 메시지를 전송 및 수신하기 위해
     샘플은 Apache Kafka Java API를 사용합니다.
 
@@ -132,8 +128,8 @@ lastupdated: "2017-03-02"
 9. 샘플은 사용자가 중지할 때까지 계속 실행됩니다. 프로세스를 중지하려면 <code>Ctrl+C</code>와 같은 명령을 실행하십시오.
 
 
-Python을 사용하여 {{site.data.keyword.messagehub}} 샘플 실행에 대해 자세히 알아보려면 [Python 콘솔 샘플 애플리케이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/messaging/2017/02/09/new-message-hub-sample-python-console-application/){:new_window}을 참조하십시오. 
-[{{site.data.keyword.messagehub}} 샘플 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ibm-messaging/message-hub-samples){:new_window}에서 다른 API 및 기능을 보여주는 샘플을 찾아볼 수도 있습니다.
+Python을 사용하여 {{site.data.keyword.messagehub}} 샘플 실행에 대해 자세히 알아보려면 [Python 콘솔 샘플 애플리케이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/messaging/2017/02/09/new-message-hub-sample-python-console-application/){:new_window}을 참조하십시오. 또는
+[{{site.data.keyword.messagehub}} 샘플 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/ibm-messaging/message-hub-samples){:new_window}에서 다른 API 및 기능을 보여주는 샘플을 찾아볼 수 있습니다.
 
 {{site.data.keyword.messagehub}}에 대해 Java 샘플 실행을 안내하는 동영상을 보려면 [{{site.data.keyword.messagehub}} - Getting started with IBM's Kafka in the cloud ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.youtube.com/watch?v=tt-bLtFzC_4){:new_window}를 참조하십시오.
 

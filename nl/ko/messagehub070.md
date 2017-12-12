@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-02-09"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -22,6 +22,6 @@ lastupdated: "2017-02-09"
 {:shortdesc}
 
 {{site.data.keyword.mql}} API를 사용하려면
-"MQLight"로 이름 지정된 Kafka 토픽을 작성해야 합니다. 그러나 {{site.data.keyword.mql}} API에서 사용된 토픽은 해당 토픽을 사용할 때 자동으로 작성됩니다. 
+"MQLight"로 이름 지정된 Kafka 토픽을 작성해야 합니다. {{site.data.keyword.mql}} API에서 사용된 토픽은 해당 토픽을 사용할 때 자동으로 작성되지만 실제로 모든 메시지가 단일 "MQLight" Kafka 토픽에 있습니다. 
 
-Bluemix 콘솔에서 {{site.data.keyword.messagehub}} 대시보드를 사용할 수 있는 방법을 보여주는 동영상은 [{{site.data.keyword.IBM_notm}} {{site.data.keyword.messagehub}} - User Interface ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.youtube.com/watch?v=lZulxqv_rHc){:new_window}을 참조하십시오.
+{{site.data.keyword.Bluemix_notm}} 콘솔에서 {{site.data.keyword.messagehub}} 대시보드를 사용할 수 있는 방법을 보여주는 동영상은 [{{site.data.keyword.IBM_notm}} {{site.data.keyword.messagehub}} - User Interface ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.youtube.com/watch?v=lZulxqv_rHc){:new_window}를 참조하십시오.

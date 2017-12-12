@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,12 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## 각 {{site.data.keyword.Bluemix_notm}} 영역에 대한 {{site.data.keyword.messagehub}} 인스턴스의 수 
-{: #instances_space notoc}
-
-각 {{site.data.keyword.Bluemix_notm}} 영역에 대해 하나의 {{site.data.keyword.messagehub}} 인스턴스만
-포함할 수 있습니다. 
-
 ##토픽 및 파티션
 {: #topics_partitions notoc}
 
@@ -32,7 +26,7 @@ lastupdated: "2017-05-05"
 새 {{site.data.keyword.Bluemix_notm}} 영역을 사용해야 합니다. 
 
 ## 메시지 보유
-{: #message_retention notoc}
+{: #message_retention}
 
 기본적으로 메시지는 Kafka에서 각 파티션당 최대 1GB까지 최대 24시간 동안 보존됩니다. 1GB 한계에 도달하면 한계를 넘지 않도록 가장 오래된 메시지가 삭제됩니다. 
 
@@ -49,7 +43,7 @@ Kafka에서 토픽 작성 및 삭제는 비동기 작업으로 완료하는 데 
 ## Kafka REST API
 {: #trouble_rest notoc}
 
-*  요청 및 응답에 2진 임베디드 형식만 지원됩니다. Avro 임베디드 형식은 지원되지 않습니다. 
+*  요청 및 응답에 2진 임베디드 형식만 지원됩니다. Avro 및 JSON 임베디드 형식은 지원되지 않습니다. 
 *  동시 요청은 이용자 인스턴스에 대해 지원되지 않습니다. 이용자 인스턴스에 해당하는 읽기, 커미트 또는 삭제 요청은 해당 인스턴스의 미해결 요청에 대한 응답을 수신한 후에만 전송해야 합니다. 
 
 ## Kafka REST API 비율 제한사항
@@ -77,4 +71,4 @@ Kafka 이용자 인스턴스를 재작성해야 합니다. 이런 경우, REST A
 {: #kafka_consumer notoc}
 
 Apache Kafka 0.8.2 단순 또는 상위 레벨 이용자 API는
-{{site.data.keyword.messagehub}}와 함께 사용할 수 없습니다. 대신 새로운 Kafka 0.9 이용자 API를 사용하십시오. 
+{{site.data.keyword.messagehub}}와 함께 사용할 수 없습니다. 대신, 가장 초기에 지원된 Kafka 이용자 API 즉, 0.9. 이용자 API를 사용할 수 있습니다.

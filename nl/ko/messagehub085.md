@@ -12,7 +12,7 @@ lastupdated: "2017-02-08"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Bluemix 퍼블릭 및 Bluemix 데디케이티드 환경의 Message Hub 사이의 차이점
+# {{site.data.keyword.Bluemix_notm}} 퍼블릭 및 데디케이티드 환경의 Message Hub 사이의 차이점
 {: #public_dedicated}
 
 {{site.data.keyword.Bluemix}}는 애플리케이션을 빌드, 실행 및 관리하기 위한 개방형 표준, 클라우드 기반 플랫폼입니다. {{site.data.keyword.Bluemix_notm}}는
@@ -42,6 +42,8 @@ lastupdated: "2017-02-08"
 서비스를 얼마나 사용하는지 보다는 서비스에 대해 지불합니다. 모든 조직과 영역을 포함한 전체 환경에서 최대 75개의 파티션이
 가능합니다. 각 파티션은 클러스터가 영역 밖에서 실행되지 않도록 하기 위해 10GB로 상한이 제한됩니다. 
 
+데디케이티드 환경의 {{site.data.keyword.messagehub}}는 {{site.data.keyword.Bluemix_notm}} 데이케이티드로만 배치될 수 있으나
+기타 데디케이티드 환경을 사용하는 경우 공용 서비스의 신디케이티드 버전을 제공할 수 있습니다.
 서비스 모니터링을 위한 Kibana 및 Grafana 대시보드는 {{site.data.keyword.Bluemix_notm}} 데디케이티드에서 지원되지 않습니다.
 
 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 데디케이티드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/cloud-computing/bluemix/dedicated/){:new_window}을 참조하십시오.
