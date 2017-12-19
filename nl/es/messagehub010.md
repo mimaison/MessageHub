@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-02-07"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -26,7 +26,6 @@ Al contrario de lo que sucede con los sistemas de mensajería tradicionales, {{s
 
 Puede utilizar {{site.data.keyword.messagehub}} para completar las tareas siguientes:
 
-* Enlazar microservicios.
 * Trabajo de descarga a procesos de trabajador back-end.
 * Conectar la corriente de datos a los análisis para obtener
 información muy valiosa.

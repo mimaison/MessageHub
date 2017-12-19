@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-11"
+lastupdated: "2017-10-17"
 
 ---
 
@@ -16,16 +16,56 @@ lastupdated: "2017-05-11"
 {: #kafka_connect}
 
 
-Para conectarse a {{site.data.keyword.messagehub}}, la API Kafka utiliza 
-<code>kafka_brokers_sasl</code> las credenciales y <code>user</code> y <code>password</code> la contraseña de [VCAP_SERVICES environment variable](/docs/services/MessageHub/messagehub071.html).
+Para conectarse a {{site.data.keyword.messagehub}}, la API
+Kafka utiliza las credenciales <code>kafka_brokers_sasl</code> y el <code>usuario</code> y <code>contraseña</code> de la [variable de entorno VCAP_SERVICES](/docs/services/MessageHub/messagehub071.html).
 
-## Connecting and authenticating in an application other than Java
+<!--17/10/17 - Karen: following info duplicated at messagehub104 -->
+## Utilización de la propiedad sasl.jaas.config (conexión y autenticación en una aplicación Java)
+{: #kafka_java notoc}
+Si está utilizando un cliente Kafka de la versión 0.10.2.1 o posterior, puede utilizar la propiedad <code>sasl.jaas.config</code> para la configuración del cliente en lugar de un archivo JAAS. Para conectarse a {{site.data.keyword.messagehub}}, establezca <code>sasl.jaas.config</code> de la siguiente manera:
+<pre>
+<code>    sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+    username="USERNAME" \
+    password="PASSWORD";</code>
+</pre>
+{:codeblock}
+
+donde USERNAME y PASSWORD son los valores del separador de {{site.data.keyword.messagehub}} **Credenciales de servicio** en {{site.data.keyword.Bluemix_notm}}.
+
+Si utiliza <code>sasl.jaas.config</code>, los clientes que se ejecuten en la misma JVM podrán utilizar credenciales diferentes. Para obtener más información, consulte [Configuración de clientes Kafka ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window}
+
+Para un cliente Kafka anterior, debe utilizar el archivo de configuración JAAS para especificar las credenciales. Este mecanismo le resultará menos cómodo, por lo que recomendamos utilizar en su lugar la propiedad <code>sasl.jaas.config</code>. 
+
+## Conexión y autenticación en una aplicación que no sea Java
 {: #kafka_notjava notoc}
 
-El servicio de {{site.data.keyword.messagehub}} actualmente autentica a sus clientes utilizando SASL PLAIN. Las credenciales se envía a través de una conexión cifrada. Esta es una nueva característica añadida en Kafka 0.10.0.X. Cualquier cliente que soporte Kafka 0.10 con SASL PLAIN debe trabajar con {{site.data.keyword.messagehub}}. Los clientes de ejemplo son los siguientes:
-* [librdkafka ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/edenhill/librdkafka/){:new_window} 
-* [confluent-kafka-python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/confluentinc/confluent-kafka-python){:new_window} 
+El servicio {{site.data.keyword.messagehub}} actualmente autentica los clientes utilizando
+SASL PLAIN sobre TLS. Las credenciales se envía a través de una conexión cifrada. Esta es una nueva característica añadida en Kafka 0.10.0.X. El siguiente ejemplo es un archivo de configuración de muestra denominado <code>consumer.properties</code>:
 
-If you are using the earlier Kafka 0.9.0.0 client, you need to use a custom login module, which you
-can download from [{{site.data.keyword.messagehub}} login module ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples/blob/master/kafka-0.9/message-hub-login-library/messagehub.login-1.0.0.jar){:new_window}. 
+```
+key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+#
+client.id=kafka-java-console-sample-consumer
+group.id=kafka-java-console-sample-group
+#
+security.protocol=SASL_SSL
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="USERNAME" password="PASSWORD";
+ssl.protocol=TLSv1.2
+ssl.enabled.protocols=TLSv1.2
+ssl.endpoint.identification.algorithm=HTTPS
+#
+# please read the Kafka docs about this setting
+auto.offset.reset=latest
+```
+{: codeblock}
+
+Cualquier cliente que soporte Kafka 0.10 con SASL PLAIN debe trabajar con {{site.data.keyword.messagehub}}. Los clientes de ejemplo son los siguientes:
+
+
+* [librdkafka ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/edenhill/librdkafka/){:new_window} 
+* [confluent-kafka-python ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/confluentinc/confluent-kafka-python){:new_window} 
+
+Si utiliza un cliente Kafka 0.9.0.0 anterior, debe utilizar un módulo de inicio de sesión personalizado, que puede descargar desde [módulo de inicio de sesión de {{site.data.keyword.messagehub}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/ibm-messaging/message-hub-samples/blob/master/kafka-0.9/message-hub-login-library/messagehub.login-1.0.0.jar){:new_window}. 
 

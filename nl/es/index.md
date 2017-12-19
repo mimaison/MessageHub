@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-03-02"
+lastupdated: "2017-09-26"
 
 ---
 
@@ -15,23 +15,19 @@ lastupdated: "2017-03-02"
 # Iniciación a Message Hub
 {: #messagehub}
 
-
-{{site.data.keyword.messagehub_full}} es un bus de mensajes escalable, distribuido y de alto rendimiento que aúna las tecnologías de nube locales y externas. {:shortdesc}
+{{site.data.keyword.messagehub_full}} es un servicio de mensajería escalable, distribuido y de alto rendimiento que permite que las aplicaciones y servicios se comuniquen de forma fácil y sencilla.{:shortdesc}
 
 Utilizando {{site.data.keyword.messagehub}}, puede realizar las siguientes tareas:
 
-* Enlazar microservicios gracias a los protocolos abiertos
+* Descargar trabajo en procesos de nodo trabajador de fondo
 * Conectar la corriente de datos a los análisis para obtener
 información muy valiosa
 * Proveer datos de sucesos a múltiples aplicaciones para
 reaccionar
 en tiempo real.
+* Transferir datos a otro servicio como por ejemplo almacenamiento a largo plazo
 
-For example, you can use {{site.data.keyword.messagehub}} to
-publish inventory changes, create a centralized bus for real-time data, or enable apps to offload
-work to back-end worker processes.
-
-Para empezar con {{site.data.keyword.messagehub}} y empezar a enviar y recibir mensajes, utilice el ejemplo Java™. El ejemplo muestra cómo un productor envía mensajes a un consumidor mediante un tema. Se utiliza el mismo programa de ejemplo para consumir mensajes y producir mensajes.
+Para empezar a trabajar con {{site.data.keyword.messagehub}} y empezar a enviar y recibir mensajes, puede utilizar el ejemplo Java™. El ejemplo muestra cómo un productor envía mensajes a un consumidor mediante un tema. Se utiliza el mismo programa de ejemplo para consumir mensajes y producir mensajes.
 
 ![Diagrama de la descripción general del ejemplo Java](getting_started_sample.gif "Diagrama con la descripción general del flujo de mensajes del ejemplo Java.")
 

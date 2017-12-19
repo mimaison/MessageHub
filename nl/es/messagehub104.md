@@ -57,6 +57,9 @@ Si está utilizando los clientes Java, ahora puede utilizar los clientes Kafka 0
 
 3. Añada esta línea a las propiedades de consumidor y productor: <code>sasl.mechanism=PLAIN</code>
 
+<!--
+17/10/17 - Karen: following info duplicated at messagehub063 
+-->
 
 ## Uso de la propiedad sasl.jaas.config
 {: #sasl_prop notoc}
@@ -72,6 +75,12 @@ donde USERNAME y PASSWORD son los valores del separador de {{site.data.keyword.m
 
 Si utiliza <code>sasl.jaas.config</code>, los clientes que se ejecuten en la misma JVM podrán utilizar credenciales diferentes. Para obtener más información, consulte [Configuración de clientes Kafka ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://kafka.apache.org/documentation/#security_sasl_plain_clientconfig){:new_window}
 
+Para un cliente Kafka anterior, debe utilizar el archivo de configuración JAAS para especificar las credenciales. Este mecanismo le resultará menos cómodo, por lo que recomendamos utilizar en su lugar la propiedad <code>sasl.jaas.config</code>. 
+
+<!-- 
+17/10/17 - Karen: following info duplicated at messagehub108
+ -->
+
 ## API para la administración de temas
 {: #topic_admin notoc}
 
@@ -86,28 +95,6 @@ Especifique este valor como múltiplo de horas.<p>**Nota:**
 si la política de limpieza es solo <code>compact</code>, se añade automáticamente <code>delete</code>, pero se inhabilita la supresión en función del tiempo. Los mensajes del tema se compactan a 1 GB antes de la supresión.</p>
 </dd>
 </dl>
-
-## Soporte para secuencias de Kafka
-{: #kafka_streams notoc}
-
-A partir de la biblioteca Streams 0.10.2.0, el tema de API funciona con {{site.data.keyword.messagehub}} sin necesidad de configuración. Especifique sus credenciales SASL utilizando <code>sasl.jaas.config</code> o un archivo JAAS y establezca <code>replication.factor</code> en 3.
-
-Por ejemplo:
-
-<pre>
-<code>
-    props.put(StreamsConfig.REPLICATION_FACTOR_CONFIG, "3");
-    props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-    props.put("security.protocol","SASL_SSL");
-    props.put("sasl.mechanism","PLAIN");
-    props.put("ssl.protocol","TLSv1.2");
-    props.put("ssl.enabled.protocols","TLSv1.2");
-    props.put("sasl.jaas.config","org.apache.kafka.common.security.plain.PlainLoginModule required username=\"USERNAME\" password=\"PASSWORD\";");
-</code>
-</pre>
-{:codeblock}
-
-donde BOOTSTRAP_SERVERS, USERNAME y PASSWORD son los valores del separador {{site.data.keyword.messagehub}} **Credenciales de servicio** en {{site.data.keyword.Bluemix_notm}}.
 
 <!--
 new topic that includes content from existing topics about samples and migration

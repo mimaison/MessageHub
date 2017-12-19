@@ -31,7 +31,3 @@ También debe tener en cuenta la siguiente información:
 
 * Los límites de mensajes son coherentes con {{site.data.keyword.messagehub}}, pero podrían ser diferentes de otros servidores que soportan la API {{site.data.keyword.mql}}. Para obtener más información, consulte [Límites máximos](/docs/services/MessageHub/messagehub083.html).
 * JMS no está soportado.
-* Solo puede tener una instancia de
-{{site.data.keyword.messagehub}}
-para cada espacio de
-{{site.data.keyword.Bluemix_notm}}.

@@ -15,9 +15,7 @@ lastupdated: "2017-02-07"
 # Variable de entorno VCAP_SERVICES
 {: #vcap}
 
-Cuando la aplicación está enlazada con el servicio {{site.data.keyword.messagehub}}, los detalles del servicio
-        se almacenan en formato JSON en la variable de entorno VCAP_SERVICES para la app. Aquí tiene un
-        ejemplo: 
+Cuando la aplicación está enlazada con el servicio {{site.data.keyword.messagehub}}, los detalles del servicio se almacenan en formato JSON en la variable de entorno VCAP_SERVICES para la app. Aquí tiene un ejemplo: 
 
 ```
 {
@@ -41,6 +39,5 @@ Cuando la aplicación está enlazada con el servicio {{site.data.keyword.message
 
 {: codeblock}
 
-El contenido de la variable de entorno es el mismo, independientemente de la API que utilice para
-      conectarse a {{site.data.keyword.messagehub}}. Su app {{site.data.keyword.Bluemix_notm}} selecciona las credenciales
-      correctas de la variable de entorno VCAP_SERVICES dependiendo de la interfaz en uso.
+El contenido de la variable de entorno es el mismo, independientemente de la API que utilice para conectarse a {{site.data.keyword.messagehub}}. Su
+app {{site.data.keyword.Bluemix_notm}} selecciona las credenciales correctas de la variable de entorno VCAP_SERVICES dependiendo de la interfaz en uso.

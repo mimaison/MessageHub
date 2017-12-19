@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-05"
+lastupdated: "2017-10-05"
 
 ---
 
@@ -17,15 +17,6 @@ lastupdated: "2017-05-05"
 {: #restrictions}
 
 
-## Número de instancias de {{site.data.keyword.messagehub}}
-                para cada espacio de {{site.data.keyword.Bluemix_notm}}
-{: #instances_space notoc}
-
-Solo puede tener una instancia de
-{{site.data.keyword.messagehub}}
-para cada espacio de
-{{site.data.keyword.Bluemix_notm}}.
-
 ##Temas y particiones
 {: #topics_partitions notoc}
 
@@ -37,7 +28,7 @@ crear más particiones, utilice un espacio nuevo de
 {{site.data.keyword.Bluemix_notm}}. 
 
 ## Retención de mensajes
-{: #message_retention notoc}
+{: #message_retention}
 
 De forma predeterminada, los mensajes se retienen un máximo de 24 horas
 en Kafka y cada partición está limitada a 1 GB. Si se alcanza el GB, se descartarán los mensajes más antiguos para mantenerse dentro
@@ -57,7 +48,7 @@ Se recomienda evitar el uso de patrones que dependan de la creación y supresió
 {: #trouble_rest notoc}
 
 *  Para solicitudes y respuestas, sólo se admite el
-formato compacto binario. No se admite el formato compacto de Avro. 
+formato compacto binario. No se da soporte a los formatos incorporado Avro y JSON. 
 *  Las solicitudes actuales no se admiten para una instancia de consumidores. Las solicitudes read, commit o
                     delete correspondientes a una instancia de consumidores deben enviarse sólo después de
                     que se haya recibido una respuesta para todas las solicitudes pendientes de dicha                     instancia.
@@ -85,5 +76,4 @@ La API REST Kafka se reinicia una vez al día durante un breve período de tiemp
 {: #kafka_consumer notoc}
 
 No puede utilizar la API simple o de
-consumidor de alto nivel de Apache Kafka 0.8.2 con {{site.data.keyword.messagehub}}. En su lugar, utilice la nueva API de consumidor Kafka
-0.9.
+consumidor de alto nivel de Apache Kafka 0.8.2 con {{site.data.keyword.messagehub}}. Puede utilizar en su lugar la API de consumidor de Kafka soportada anteriormente, que es la API de consumidor 0.9.

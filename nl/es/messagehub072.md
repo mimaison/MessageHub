@@ -34,5 +34,4 @@ Puede supervisar la siguiente información de registro:
 
 
 Le recomendamos que no edite los paneles de control {{site.data.keyword.messagehub}} porque {{site.data.keyword.messagehub}} aplica actualizaciones que podrían sobrescribir sus cambios.
-Sin embargo, puede
-                incluir dichas métricas y sucesos en sus propios paneles de control.
+Sin embargo, puede incluir dichas métricas y sucesos en sus propios paneles de control.

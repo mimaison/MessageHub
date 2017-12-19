@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-08-18"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-08-18"
 # Notificación de un problema al equipo de {{site.data.keyword.messagehub}}
 {: #report_problem}
 
-Si experimenta un problema con {{site.data.keyword.messagehub}}, primero compruebe la página de estado de [{{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://status.ng.bluemix.net/){:new_window}. 
+Si tiene problemas con {{site.data.keyword.messagehub}}, compruebe primero la página de estado de [{{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/status){:new_window}. 
 
 Si desea ayuda del equipo de {{site.data.keyword.messagehub}}, recopile tanta de la siguiente información como sea posible:{:shortdesc}
 
@@ -33,9 +33,7 @@ Si desea ayuda del equipo de {{site.data.keyword.messagehub}}, recopile tanta de
 10. ¿Qué impacto tiene el problema en el servicio?
 
 
-
-
-
+Puede proporcionar la información que ha obtenido a IBM en una incidencia de soporte [mediante el envío de una solicitud de soporte ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/docs/support/index.html#open-ticket).
 
 
 
