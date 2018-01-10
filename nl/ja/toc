@@ -15,7 +15,8 @@ IBM Message Hub
 	 	messagehub085.md
 
 	{: .topicgroup}
-	関連リンク	 	[Message Hub Java Kafka サンプル](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample)
+	関連リンク
+	 	[Message Hub Java Kafka サンプル](https://github.com/ibm-messaging/message-hub-samples/tree/master/kafka-java-console-sample)
 	 	[Apache Kafka 0.10.2.1 クライアント](http://kafka.apache.org/0102/javadoc/index.html)
 		[developerWorks の IBM Message Hub](https://developer.ibm.com/messaging/message-hub/)
 	{: .navgroup-end}
