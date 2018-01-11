@@ -19,7 +19,7 @@ lastupdated: "2017-09-26"
 distributed, high throughput messaging service that enables applications and services to communicate easily and reliably.
 {:shortdesc}
 
-Using {{site.data.keyword.messagehub}}, you can
+Using {{site.data.keyword.messagehub}}, you can 
 complete the following tasks:
 
 * Offload work to back-end worker processes
