@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
-lastupdated: "2017-09-26"
+  years: 2015, 2018
+lastupdated: "2018-01-22"
 
 ---
 
@@ -135,9 +135,7 @@ is some sample output:
 following: <code>Ctrl+C</code>
 
 
-To find out more about running a {{site.data.keyword.messagehub}} sample using Python, see [Python console sample application ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/messaging/2017/02/09/new-message-hub-sample-python-console-application/){:new_window}. You can also find samples
-that demonstrate other APIs and features at [{{site.data.keyword.messagehub}} samples ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples){:new_window}.
-
 To watch a video that walks
 you through getting a Java sample to run against {{site.data.keyword.messagehub}}, see [{{site.data.keyword.messagehub}} - Getting started with IBM's Kafka in the cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.youtube.com/watch?v=tt-bLtFzC_4){:new_window}.
 
+To access other {{site.data.keyword.messagehub}} samples, including samples for Node.js and Python, see [{{site.data.keyword.messagehub}} samples ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples){:new_window}.
