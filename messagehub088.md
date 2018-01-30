@@ -54,3 +54,7 @@ secured using SSL/TLS.
 * The Cloud Object Storage and {{site.data.keyword.objectstorageshort}} bridges concatenate messages using newline characters as separators as they write the data into Cloud Object Storage or {{site.data.keyword.objectstorageshort}} respectively. This makes these bridges unsuitable for messages that contain embedded newline characters and for binary message data.
 * Object naming conventions that are currently used by the Cloud Object Storage and {{site.data.keyword.objectstorageshort}} bridges might change in future.
 
+## Bridges from other services into {{site.data.keyword.messagehub}}
+{: notoc}
+
+* {{site.data.keyword.iot_full}} provides its own [bridge into {{site.data.keyword.messagehub}}](/docs/services/MessageHub/messagehub119.html){:new_window}. The bridge provides a unidirectional link into {{site.data.keyword.messagehub}} that allows you to store historical data. By connecting {{site.data.keyword.messagehub}} to {{site.data.keyword.iot_short_notm}}, you can use Message Hub as an event pipeline to consume your device events from the Watson IoT Platform and make the events available in real time to the rest of the platform. 
