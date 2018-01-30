@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-01-24"
+lastupdated: "2018-01-30
 
 ---
 
@@ -69,6 +69,7 @@ Write your apps to handle the possibility that bridges might restart from time t
 The following configuration settings apply to all topics and cannot be changed:
 * replication.factor = 3
 * min.insync.replicas = 2
+
 ## How does {{site.data.keyword.messagehub}}'s billing work? 
 {: #billing }
 
