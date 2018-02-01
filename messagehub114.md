@@ -111,7 +111,7 @@ The consumer lag for a partition is the difference between the offset of the mos
 
 If you observe that a consumer is processing messages successfully but occasionally appears to jump over a group of messages, it could be a sign that the consumer is not able to keep up. For topics that are not using log compaction, the amount of log space is managed by periodically deleting old log segments. If a consumer has fallen so far behind that it is consuming messages in a log segment that is deleted, it will suddenly jump forwards to the start of the next log segment. If it is important that the consumer processes all of the messages, this behavior indicates message loss from the point of view of this consumer.
 
-You can use the ```kafka-consumer-groups``` tool to see the consumer lag. You can also use the consumer API and the consumer metrics for the same purpose.
+You can use the <code>kafka-consumer-groups</code> tool to see the consumer lag. You can also use the consumer API and the consumer metrics for the same purpose.
 
 
 ## Controlling the speed of message consumption
@@ -195,7 +195,7 @@ finally {
 
 # Exception handling
 
-Any robust application that uses the Kafka client needs to handle exceptions for certain expected situations. In some cases, the exceptions are not thrown directly because some methods are asynchronous and deliver their results using a `Future` or a callback. You can find example code in GitHub https://github.com/ibm-messaging/message-hub-samples which shows complete examples.
+Any robust application that uses the Kafka client needs to handle exceptions for certain expected situations. In some cases, the exceptions are not thrown directly because some methods are asynchronous and deliver their results using a `Future` or a callback. You can find example code in [GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/ibm-messaging/message-hub-samples) which shows complete examples.
 
 Here's a list of exceptions that you should handle in your code:
 
