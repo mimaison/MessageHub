@@ -7,7 +7,11 @@ IBM Message Hub
 
 	{: .navgroup id="learn"}
 	index.md
-	messagehub010.md
+
+	
+	{: .topicgroup}
+	About
+		messagehub010.md
 	 	messagehub107.md
 	 	messagehub073.md
 		messagehub112.md
