@@ -200,7 +200,7 @@ Any robust application that uses the Kafka client needs to handle exceptions for
 Here's a list of exceptions that you should handle in your code:
 
 #### org.apache.kafka.common.errors.WakeupException
-Thrown by `Consumer.poll(...)` as a result of `Consumer.wakeup()` being called. This is the normal way to interrupt the consumer's polling loop. The polling loop should exit and `Consumer.close()` should be called to disconnect cleanly.
+Thrown by `Consumer.poll(...)` as a result of `Consumer.wakeup()` being called. This is the standard way to interrupt the consumer's polling loop. The polling loop should exit and `Consumer.close()` should be called to disconnect cleanly.
 #### org.apache.kafka.common.errors.NotLeaderForPartitionException
 Thrown as a result of `Producer.send(...)` when the leadership for a partition changes. The client automatically refreshes its metadata to find the up-to-date leader information. Retry the operation, which should succeed with the updated metadata.
 #### org.apache.kafka.common.errors.CommitFailedException
