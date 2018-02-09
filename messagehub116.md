@@ -86,7 +86,7 @@ After you've created the properties file as described previously, you can run th
 
 <pre>
 <code>
-  $ kafka-consumer-groups.sh --bootstrap-server KAFKA_BROKERS_SASL --command-config CONFIG_FILE --list --describe
+  $ kafka-consumer-groups.sh --bootstrap-server KAFKA_BROKERS_SASL --command-config CONFIG_FILE --list
 </code>
 </pre>
 {:codeblock}
